@@ -42,9 +42,9 @@
 		"typography": {
 			"fontFamilies": [
 				{
+					"fontFamily": "\"Helvetica Neue\", Helvetica, Arial, Inter, sans-serif",
 					"name": "Helvetica Neue",
-					"slug": "helvetica-neue",
-					"fontFamily": "\"Helvetica Neue\", Helvetica, Arial, Inter, sans-serif"
+					"slug": "helvetica-neue"
 				},
 				{
 					"fontFace": [
