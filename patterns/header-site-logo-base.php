@@ -22,6 +22,6 @@
 <!-- /wp:term-template --></div>
 <!-- /wp:terms-query -->
 
-<!-- wp:navigation {"ref":7,"textColor":"primary","style":{"typography":{"textTransform":"uppercase","fontStyle":"normal","fontWeight":"700"}},"fontSize":"x-small","layout":{"type":"flex","setCascadingProperties":true}} /--></div>
+<!-- wp:navigation {"textColor":"primary","style":{"typography":{"textTransform":"uppercase","fontStyle":"normal","fontWeight":"700"}},"fontSize":"x-small","layout":{"type":"flex","setCascadingProperties":true}} /--></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
