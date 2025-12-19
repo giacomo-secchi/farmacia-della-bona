@@ -5,7 +5,7 @@
         {
             "key": "field_6941a3d55d0a5",
             "label": "Title",
-            "name": "hero_banner_title",
+            "name": "hero_title",
             "aria-label": "",
             "type": "text",
             "instructions": "",
@@ -215,5 +215,5 @@
     "description": "",
     "show_in_rest": 0,
     "display_title": "",
-    "modified": 1766055853
+    "modified": 1766066806
 }

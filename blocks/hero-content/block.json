@@ -1,5 +1,5 @@
 {
-    "name": "acf/hero",
+    "name": "acf/hero-content",
     "title": "Hero",
     "description": "A custom testimonial block that uses ACF fields.",
     "style": [ "file:./testimonial.css" ],
@@ -7,10 +7,11 @@
     "icon": "admin-comments",
     "keywords": ["testimonial", "quote"],
     "acf": {
-        "mode": "preview",
         "renderTemplate": "template.php"
     },
     "supports": {
-        "anchor": true
-    }
+        "anchor": false,
+        "align": false
+    },
+    "parent": [ "acf/hero" ]
 }

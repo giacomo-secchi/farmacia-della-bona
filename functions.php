@@ -10,4 +10,7 @@ add_action( 'init', function () {
      * @link https://developer.wordpress.org/reference/functions/register_block_type/
      */
     register_block_type( __DIR__ . '/blocks/hero' );
-});
+    register_block_type( __DIR__ . '/blocks/hero-content' );
+} );
+
+ 
