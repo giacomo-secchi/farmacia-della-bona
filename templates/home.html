@@ -1,8 +1,87 @@
 <!-- wp:template-part {"slug":"header","tagName":"header","className":"site-header"} /-->
-<!-- wp:acf/hero {"name":"acf/hero"} /-->
+
+ 
+
 <!-- wp:group {"tagName":"main","style":{"spacing":{"margin":{"top":"0"},"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"}}},"layout":{"type":"constrained"}} -->
-<main class="wp-block-group" style="margin-top:0;padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40)">
-	<!-- wp:pattern {"slug":"powder/posts"} /-->
-</main>
+<main class="wp-block-group" style="margin-top:0;padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40)"><!-- wp:group {"metadata":{"name":"Hero Section","categories":["powder-hero"],"patternName":"powder/hero-columns-text-image-contrast"},"align":"full","style":{"spacing":{"margin":{"top":"0"},"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|80"}},"elements":{"link":{"color":{"text":"var:preset|color|base"}}}},"backgroundColor":"contrast","textColor":"base","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull has-base-color has-contrast-background-color has-text-color has-background has-link-color" style="margin-top:0;padding-top:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--80)"><!-- wp:columns {"verticalAlignment":"center","align":"wide","className":"is-style-column-reverse","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|60","left":"var:preset|spacing|80"}}}} -->
+<div class="wp-block-columns alignwide are-vertically-aligned-center is-style-column-reverse"><!-- wp:column {"verticalAlignment":"center"} -->
+<div class="wp-block-column is-vertically-aligned-center"><!-- wp:group {"style":{"spacing":{"blockGap":"10px"}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"style":{"typography":{"textTransform":"uppercase","fontStyle":"normal","fontWeight":"400","lineHeight":"1"}},"fontSize":"x-small"} -->
+<p class="has-x-small-font-size" style="font-style:normal;font-weight:400;line-height:1;text-transform:uppercase">Farmacia Della Bona</p>
+<!-- /wp:paragraph --></div>
 <!-- /wp:group -->
+
+<!-- wp:heading {"style":{"typography":{"fontSize":"48px"}}} -->
+<h2 class="wp-block-heading" style="font-size:48px">Ci prendiamo <br>cura di te dal 1954.</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"var:preset|spacing|20"}}}} -->
+<p style="margin-top:var(--wp--preset--spacing--20)">La Farmacia Della Bona si è sempre dedicata con cura alle richieste dei clienti, ponendo particolare interessa all'educazione sanitaria ed offrendo un'ampia gamma di prodotti disponibili.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"base","textColor":"contrast","style":{"elements":{"link":{"color":{"text":"var:preset|color|contrast"}}}}} -->
+<div class="wp-block-button"><a class="wp-block-button__link has-contrast-color has-base-background-color has-text-color has-background has-link-color wp-element-button" href="#">Scopri chi siamo →</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"verticalAlignment":"center"} -->
+<div class="wp-block-column is-vertically-aligned-center">
+    <!-- wp:woocommerce/single-product {"productId":111} -->
+<div class="wp-block-woocommerce-single-product woocommerce"><!-- wp:columns {"style":{"border":{"radius":{"topLeft":"var:preset|border-radius|small","topRight":"var:preset|border-radius|small","bottomLeft":"var:preset|border-radius|small","bottomRight":"var:preset|border-radius|small"}}},"backgroundColor":"base"} -->
+<div class="wp-block-columns has-base-background-color has-background" style="border-top-left-radius:var(--wp--preset--border-radius--small);border-top-right-radius:var(--wp--preset--border-radius--small);border-bottom-left-radius:var(--wp--preset--border-radius--small);border-bottom-right-radius:var(--wp--preset--border-radius--small)"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:woocommerce/product-image {"showSaleBadge":false,"isDescendentOfSingleProductBlock":true} -->
+<!-- wp:woocommerce/product-sale-badge {"align":"right"} /-->
+<!-- /wp:woocommerce/product-image -->
+
+<!-- wp:post-title {"textAlign":"","isLink":true,"align":"right","__woocommerceNamespace":"woocommerce/product-query/product-title"} /-->
+
+<!-- wp:woocommerce/product-rating {"isDescendentOfSingleProductBlock":true} /-->
+
+<!-- wp:woocommerce/product-price {"isDescendentOfSingleProductBlock":true} /-->
+
+<!-- wp:woocommerce/product-summary {"isDescendentOfSingleProductBlock":true} /--></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:woocommerce/single-product -->
+</div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"metadata":{"name":"Posts"},"align":"full","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull"><!-- wp:query {"queryId":0,"query":{"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true,"perPage":10},"layout":{"type":"constrained"}} -->
+<div class="wp-block-query"><!-- wp:post-template -->
+<!-- wp:group {"tagName":"article","layout":{"type":"default"}} -->
+<article class="wp-block-group"><!-- wp:group {"tagName":"header","className":"entry-header","style":{"spacing":{"blockGap":"10px"}},"layout":{"type":"constrained"}} -->
+<header class="wp-block-group entry-header"><!-- wp:post-title {"isLink":true} /-->
+
+<!-- wp:group {"style":{"spacing":{"blockGap":"5px"}},"fontSize":"small","layout":{"type":"flex"}} -->
+<div class="wp-block-group has-small-font-size"><!-- wp:post-date {"metadata":{"bindings":{"datetime":{"source":"core/post-data","args":{"field":"date"}}}}} /-->
+
+<!-- wp:paragraph -->
+<p>·</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:post-author-name {"isLink":true} /--></div>
+<!-- /wp:group --></header>
+<!-- /wp:group -->
+
+<!-- wp:post-excerpt {"moreText":"Read More"} /--></article>
+<!-- /wp:group -->
+<!-- /wp:post-template -->
+
+<!-- wp:group {"style":{"spacing":{"margin":{"top":"0"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group" style="margin-top:0"><!-- wp:query-pagination {"layout":{"type":"flex","justifyContent":"space-between"}} -->
+<!-- wp:query-pagination-previous /-->
+
+<!-- wp:query-pagination-next /-->
+<!-- /wp:query-pagination --></div>
+<!-- /wp:group --></div>
+<!-- /wp:query --></div>
+<!-- /wp:group --></main>
+<!-- /wp:group -->
+
 <!-- wp:template-part {"slug":"footer","tagName":"footer","className":"site-footer"} /-->

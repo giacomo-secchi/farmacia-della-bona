@@ -8,12 +8,27 @@
 // Load values and assign defaults.
 
 $term = get_queried_object();
-$title = get_field( 'hero_title', $term );
-$subtitle = get_field( 'hero_subtitle', $term );
+$hero_title = get_field( 'hero_title', $term );
+$hero_subtitle = get_field( 'hero_subtitle', $term );
+$hero_button_link = get_field( 'hero_button_link', $term );
+$hero_link_text = get_field( 'hero_link_text', $term );
+$hero_content = get_field( 'hero_content', $term );
+$hero_image = get_field( 'hero_image', $term );
+$hero_color = get_field( 'hero_color', $term );
+$hero_list = get_field( 'hero_list', $term );
 
+
+
+ 
 if ( empty( $term ) ) {
-    $title = get_field( 'hero_title', 'option' );
-    $sub_title = get_field( 'hero_subtitle', 'option' );
+    $hero_title = get_field( 'hero_title', 'option' );
+    $hero_subtitle = get_field( 'hero_subtitle', 'option' );
+    $hero_button_link = get_field( 'hero_button_link', 'option' );
+    $hero_link_text = get_field( 'hero_link_text', 'option' );
+    $hero_content = get_field( 'hero_content', 'option' );
+    $hero_image = get_field( 'hero_image', 'option' );
+    $hero_color = get_field( 'hero_color', 'option' );
+    $hero_list = get_field( 'hero_list', 'option' );
 
 } 
 
@@ -65,8 +80,10 @@ if ( empty( $term ) ) {
 <?php if ( $is_preview && empty( $title ) ) : ?>
 	<p>Please enter a Twitter handle.</p>
 <?php else : ?>
-	<?php echo esc_html( $title ); ?>   
-    <?php echo esc_html( $subtitle ); ?>
+	<h2><?php echo esc_html( $hero_title ); ?></h2>
+    <p><?php echo esc_html( $hero_subtitle ); ?></p>
+    <p><?php echo esc_html( $hero_content ); ?></p>
+    <a href="<?php echo esc_url( $hero_button_link ); ?>" class="btn btn-primary"><?php echo esc_html( $hero_link_text ); ?></a>
 <?php endif; ?>
 
  

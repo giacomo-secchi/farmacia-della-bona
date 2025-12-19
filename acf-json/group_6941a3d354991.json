@@ -46,8 +46,8 @@
         },
         {
             "key": "field_6943c4d3f895c",
-            "label": "Button",
-            "name": "hero_button",
+            "label": "Button Link",
+            "name": "hero_button_link",
             "aria-label": "",
             "type": "page_link",
             "instructions": "",
@@ -71,6 +71,27 @@
             "multiple": 0,
             "allow_null": 0,
             "allow_in_bindings": 0
+        },
+        {
+            "key": "field_69451c10c6905",
+            "label": "Link Text",
+            "name": "hero_link_text",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
         },
         {
             "key": "field_6943c52ff895d",
@@ -145,7 +166,7 @@
         {
             "key": "field_6943de32bf8fa",
             "label": "List",
-            "name": "list",
+            "name": "hero_list",
             "aria-label": "",
             "type": "repeater",
             "instructions": "",
@@ -215,5 +236,5 @@
     "description": "",
     "show_in_rest": 0,
     "display_title": "",
-    "modified": 1766066806
+    "modified": 1766136877
 }
