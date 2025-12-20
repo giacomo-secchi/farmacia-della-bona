@@ -5,10 +5,14 @@
 		"color": {
 			"gradients": [
 				{
-					"color": "#000",
-					"gradient": "linear-gradient(135deg,rgb(52,141,112) 0%,rgb(255,255,255) 100%)",
-					"name": "Colore 1",
-					"slug": "custom-color-1"
+					"slug": "gradient-1",
+					"gradient": "linear-gradient(to bottom, var(--wp--preset--color--base) 0%, var(--wp--preset--color--primary-light-100) 100%)",
+					"name": "Vertical soft beige to white"
+				},
+				{
+					"slug": "gradient-2",
+					"gradient": "linear-gradient(to bottom, var(--wp--preset--color--base) 0%, var(--wp--preset--color--secondary) 100%)",
+					"name": "Vertical soft beige to white"
 				}
 			],
 			"palette": [
@@ -28,7 +32,12 @@
 					"slug": "primary"
 				},
 				{
-					"color": "#c4b4ff",
+					"color": "#fbfefd",
+					"name": "Primary Light (100)",
+					"slug": "primary-light-100"
+				},
+				{
+					"color": "#daf1e9",
 					"name": "Secondary",
 					"slug": "secondary"
 				},
@@ -105,6 +114,24 @@
 		}
 	},
 	"styles": {
+		"blocks": {
+			"core/navigation": {
+				"elements": {
+					"link": {
+						":hover": {
+							"color": {
+								"text": "var(--wp--preset--color--contrast) !important"
+							}
+						}
+					}
+				}
+			}
+		},
+		"elements": {
+			"link": {
+				"css": "a, a:not(.wp-element-button) {text-decoration: none;}"
+			}
+		},
 		"typography": {
 			"fontFamily": "var(--wp--preset--font-family--helvetica-neue)",
 			"fontSize": "var(--wp--preset--font-size--medium)",

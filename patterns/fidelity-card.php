@@ -1,5 +1,10 @@
-<!-- wp:template-part {"slug":"header","tagName":"header","className":"site-header"} /-->
-
+<?php
+/**
+ * Title: Banner - Fidelity Card
+ * Slug: farmacia-della-bona/fidelity-card
+ * Categories: farmacia-della-bona
+ */
+?>
 <!-- wp:group {"metadata":{"name":"Hero Section","categories":["powder-hero"],"patternName":"powder/hero-columns-text-image-contrast"},"align":"full","style":{"spacing":{"margin":{"top":"0px"},"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|80"}},"elements":{"link":{"color":{"text":"var:preset|color|base"}}}},"backgroundColor":"contrast","textColor":"base","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull has-base-color has-contrast-background-color has-text-color has-background has-link-color" style="margin-top:0px;padding-top:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--80)"><!-- wp:columns {"verticalAlignment":"center","align":"wide","className":"is-style-column-reverse","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|60","left":"var:preset|spacing|80"}}}} -->
 <div class="wp-block-columns alignwide are-vertically-aligned-center is-style-column-reverse"><!-- wp:column {"verticalAlignment":"center"} -->
@@ -8,6 +13,7 @@
 <p class="has-x-small-font-size" style="font-style:normal;font-weight:400;line-height:1;text-transform:uppercase">Farmacia Della Bona</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
+
 
 <!-- wp:heading {"style":{"typography":{"fontSize":"48px"}}} -->
 <h2 class="wp-block-heading" style="font-size:48px">Ci prendiamo <br>cura di te dal 1954.</h2>
@@ -45,42 +51,3 @@
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
 <!-- /wp:group -->
-
-<!-- wp:pattern {"slug":"farmacia-della-bona/services"} /-->
-<!-- wp:pattern {"slug":"farmacia-della-bona/fidelity-card"} /-->
-
-
-<!-- wp:group {"metadata":{"name":"Posts"},"align":"full","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull"><!-- wp:query {"queryId":0,"query":{"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true,"perPage":10},"layout":{"type":"constrained"}} -->
-<div class="wp-block-query"><!-- wp:post-template -->
-<!-- wp:group {"tagName":"article","layout":{"type":"default"}} -->
-<article class="wp-block-group"><!-- wp:group {"tagName":"header","className":"entry-header","style":{"spacing":{"blockGap":"10px"}},"layout":{"type":"constrained"}} -->
-<header class="wp-block-group entry-header"><!-- wp:post-title {"isLink":true} /-->
-
-<!-- wp:group {"style":{"spacing":{"blockGap":"5px"}},"fontSize":"small","layout":{"type":"flex"}} -->
-<div class="wp-block-group has-small-font-size"><!-- wp:post-date {"metadata":{"bindings":{"datetime":{"source":"core/post-data","args":{"field":"date"}}}}} /-->
-
-<!-- wp:paragraph -->
-<p>·</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:post-author-name {"isLink":true} /--></div>
-<!-- /wp:group --></header>
-<!-- /wp:group -->
-
-<!-- wp:post-excerpt {"moreText":"Read More"} /--></article>
-<!-- /wp:group -->
-<!-- /wp:post-template -->
-
-<!-- wp:group {"style":{"spacing":{"margin":{"top":"0"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group" style="margin-top:0"><!-- wp:query-pagination {"layout":{"type":"flex","justifyContent":"space-between"}} -->
-<!-- wp:query-pagination-previous /-->
-
-<!-- wp:query-pagination-next /-->
-<!-- /wp:query-pagination --></div>
-<!-- /wp:group --></div>
-<!-- /wp:query --></div>
-<!-- /wp:group --></main>
-<!-- /wp:group -->
-
-<!-- wp:template-part {"slug":"footer","tagName":"footer","className":"site-footer"} /-->
