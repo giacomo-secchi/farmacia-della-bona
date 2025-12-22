@@ -2,7 +2,7 @@
 /**
  * Title: Header - custom site logo
  * Slug: farmacia-della-bona/header-site-logo
- * Categories: header, farmacia-della-bona
+ * Categories: header, farmacia-della-bona-patterns
  * Block Types: core/template-part/header
  */
 ?>

@@ -2,7 +2,7 @@
 /**
  * Title: Service Section
  * Slug: farmacia-della-bona/service-section
- * Categories: farmacia-della-bona
+ * Categories: farmacia-della-bona-patterns
  */
 ?>
 <!-- wp:group {"metadata":{"patternName":"core/block/162","name":"Services Section"},"align":"full","style":{"shadow":"var:preset|shadow|inner","background":{"backgroundImage":{"url":"<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/images/pexels-n-voitkevich-7526061.jpg","id":156,"source":"file","title":"pexels-n-voitkevich-7526061"},"backgroundSize":"cover"},"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|80"}}},"layout":{"type":"constrained"}} -->

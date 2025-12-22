@@ -2,7 +2,7 @@
 /**
  * Title: Services
  * Slug: farmacia-della-bona/services
- * Categories: farmacia-della-bona
+ * Categories: farmacia-della-bona-patterns
  */
 ?>
 <!-- wp:group {"metadata":{"name":"Feature Boxes","categories":["powder-content"],"patternName":"powder/content-feature-boxes-contrast"},"align":"full","className":"has-gradient-2-gradient-background","style":{"spacing":{"margin":{"top":"0"},"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|80"}},"elements":{"link":{"color":{"text":"var:preset|color|base"}}}},"backgroundColor":"contrast","textColor":"base","layout":{"type":"constrained"}} -->

@@ -19,7 +19,7 @@ add_action( 'init', function () {
  */
 add_action( 'init', function () {
     register_block_pattern_category(
-        'farmacia-della-bona',
+        'farmacia-della-bona-patterns',
         array( 'label' => __( 'Farmacia Della Bona Theme Patterns', 'farmacia-della-bona' ) )
     );
 } );
