@@ -48,6 +48,16 @@
 				}
 			]
 		},
+		"shadow": {
+			"defaultPresets": false,
+			"presets": [
+				{
+					"name": "Inner",
+					"shadow": "inset 10px 151px 200px 90px rgb(0 0 0 / 39%)",
+					"slug": "inner"
+				}
+			]
+		},
 		"typography": {
 			"fontFamilies": [
 				{
