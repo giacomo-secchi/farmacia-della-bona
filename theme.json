@@ -5,14 +5,14 @@
 		"color": {
 			"gradients": [
 				{
-					"slug": "gradient-1",
 					"gradient": "linear-gradient(to bottom, var(--wp--preset--color--base) 0%, var(--wp--preset--color--primary-light-100) 100%)",
-					"name": "Vertical soft beige to white"
+					"name": "Vertical soft beige to white",
+					"slug": "gradient-1"
 				},
 				{
-					"slug": "gradient-2",
 					"gradient": "linear-gradient(to bottom, var(--wp--preset--color--base) 0%, var(--wp--preset--color--secondary) 100%)",
-					"name": "Vertical soft beige to white"
+					"name": "Vertical soft beige to white",
+					"slug": "gradient-2"
 				}
 			],
 			"palette": [
@@ -116,15 +116,7 @@
 	"styles": {
 		"blocks": {
 			"core/navigation": {
-				"elements": {
-					"link": {
-						":hover": {
-							"color": {
-								"text": "var(--wp--preset--color--contrast) !important"
-							}
-						}
-					}
-				}
+				"css": "& .wp-block-navigation-item:hover { color: var(--wp--preset--color--contrast); }"
 			}
 		},
 		"elements": {
