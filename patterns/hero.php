@@ -22,14 +22,11 @@
 <!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"var:preset|spacing|20"}}}} -->
 <p style="margin-top:var(--wp--preset--spacing--20)">La Farmacia Della Bona si è sempre dedicata con cura alle richieste dei clienti, ponendo particolare interessa all'educazione sanitaria ed offrendo un'ampia gamma di prodotti disponibili.</p>
 <!-- /wp:paragraph -->
-
-<!-- wp:shortcode -->
-[trustindex no-registration=google]
-<!-- /wp:shortcode -->
+ 
 
 <!-- wp:buttons {"layout":{"type":"flex"}} -->
 <div class="wp-block-buttons"><!-- wp:button {"textColor":"base","className":"is-style-fill","style":{"elements":{"link":{"color":{"text":"var:preset|color|base"}}}}} -->
-<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-base-color has-text-color has-link-color wp-element-button" href="#">Scopri chi siamo →</a></div>
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-base-color has-text-color has-link-color wp-element-button" href="<?php echo esc_url( home_url( '/chi-siamo/' ) ); ?>">Scopri chi siamo →</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column -->
