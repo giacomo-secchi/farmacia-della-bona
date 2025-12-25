@@ -7,30 +7,38 @@
 		"core/group"
 	],
 	"styles": {
+        "css": "& > p { text-transform: uppercase; }",
+        "color": {
+            "text": "var(--wp--preset--color--contrast)",
+            "gradient": "var(--wp--preset--gradient--gradient-2)"
+        },
+        "typography": {
+            "fontSize": "var(--wp--preset--font-size--x-small)",
+            "fontWeight": "300"
+        },
         "spacing":{
-            "blockGap":"10px",
             "margin": {
-                "bottom":"var:preset|spacing|60"
+                "bottom":"var:preset|spacing|60",
+                "top":"0"
+            },
+            "padding": {
+                "bottom": "var(--wp--preset--spacing--60)",
+                "top": "var(--wp--preset--spacing--60)"
             }
         },
-        "elements": {
-            "p": {
-                "typography": {
-                    "textTransform": "uppercase",
-                    "fontSize": "var(--wp--preset--font-size--x-small)",
-                    "fontWeight": "400"
-                },
-                "color": {
-                    "text": "green"
-                }
-            },
+        "elements": { 
             "heading": {
                 "typography": {
-                    "fontSize": "var(--wp--preset--font-size--x-large)"
+                    "fontSize": "48px"
                 },
 				"color": {
 					"text": "var(--wp--preset--color--primary)"
-				}
+				},
+                "spacing":{
+                    "margin": {
+                        "top":"var:preset|spacing|10"
+                    }
+                }
 			}
         }
     }

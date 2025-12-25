@@ -2,16 +2,19 @@
 
 <!-- wp:acf/hero {"name":"acf/hero","mode":"preview"} /-->
 
-<!-- wp:query {"queryId":2,"query":{"perPage":4,"pages":0,"offset":0,"postType":"servizio","order":"asc","orderBy":"title","author":"","search":"","exclude":[],"sticky":"","inherit":false,"taxQuery":{"reparto":[9]},"parents":[],"format":[]}} -->
-<div class="wp-block-query"><!-- wp:post-template -->
-<!-- wp:post-title /-->
 
-<!-- wp:post-date {"metadata":{"bindings":{"datetime":{"source":"core/post-data","args":{"field":"date"}}}}} /-->
-<!-- /wp:post-template -->
 
-<!-- wp:query-no-results -->
-<!-- wp:paragraph {"placeholder":"Aggiungi testo o blocchi da visualizzare quando la query non restituisce alcun risultato."} -->
-<p></p>
-<!-- /wp:paragraph -->
-<!-- /wp:query-no-results --></div>
+
+<!-- wp:query {"query":{"postType":"team_member","perPage":1,"inherit":false},"namespace":"staff-highlight-query"} -->
+<div class="wp-block-query"><!-- wp:post-template {"layout":{"type":"grid","columnCount":3}} -->
+<!-- wp:group {"className":"is-style-card","layout":{"type":"constrained"}} -->
+<div class="wp-block-group is-style-card"><!-- wp:post-featured-image {"width":"80px","height":"80px","align":"center"} /-->
+
+<!-- wp:post-title {"textAlign":"center"} /-->
+
+<!-- wp:post-content /--></div>
+<!-- /wp:group -->
+<!-- /wp:post-template --></div>
 <!-- /wp:query -->
+
+
