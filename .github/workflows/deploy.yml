@@ -11,6 +11,14 @@ jobs:
       ssh-host: ${{ vars.SSH_HOST }}
       ssh-username: ${{ vars.SSH_USERNAME }}
       ssh-folder: ${{ vars.SSH_FOLDER }}
+      sync-pairs: |
+        [
+          {
+            "local": ".",
+            "remote": "/wp-content/themes/${{ github.event.repository.name }}/",
+            "exclude": ".git* .github* node_modules"
+          }
+        ]
     secrets:
       ssh-key: ${{ secrets.SSH_KEY }}
 
