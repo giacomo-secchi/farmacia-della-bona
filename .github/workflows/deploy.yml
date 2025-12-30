@@ -1,0 +1,16 @@
+name: Deploy to Cloudways
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    uses: WritePoetry/reusable-workflows/.github/workflows/sync-folders-to-server.yml@main
+    with:
+      ssh-host: ${{ vars.SSH_HOST }}
+      ssh-username: ${{ vars.SSH_USERNAME }}
+      ssh-folder: ${{ vars.SSH_FOLDER }}
+    secrets:
+      ssh-key: ${{ secrets.SSH_KEY }}
+
