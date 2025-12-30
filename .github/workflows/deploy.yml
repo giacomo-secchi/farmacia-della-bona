@@ -6,11 +6,11 @@ on:
 
 jobs:
   deploy:
-    uses: WritePoetry/reusable-workflows/.github/workflows/sync-folders-to-server.yml@main
+    uses: WritePoetry/reusable-workflows/.github/workflows/sync-folders-to-server.yml@v2
     with:
-      host: ${{ vars.SSH_HOST }}
-      username: ${{ vars.SSH_USERNAME }}
-      folder: ${{ vars.SSH_FOLDER }}
+      host: ${{ vars.HOST }}
+      username: ${{ vars.USERNAME }}
+      folder: ${{ vars.FOLDER }}
       paths: |
         [
           {
