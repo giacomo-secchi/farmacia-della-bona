@@ -15,7 +15,7 @@ jobs:
         [
           {
             "local": ".",
-            "remote": "/wp-content/themes/${{ github.event.repository.name }}/",
+            "remote": "/themes/${{ github.event.repository.name }}/",
             "exclude": ".git* .github* node_modules"
           }
         ]
