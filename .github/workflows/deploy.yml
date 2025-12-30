@@ -8,14 +8,14 @@ jobs:
   deploy:
     uses: WritePoetry/reusable-workflows/.github/workflows/sync-folders-to-server.yml@main
     with:
-      ssh-host: ${{ vars.SSH_HOST }}
-      ssh-username: ${{ vars.SSH_USERNAME }}
-      ssh-folder: ${{ vars.SSH_FOLDER }}
-      sync-pairs: |
+      host: ${{ vars.SSH_HOST }}
+      username: ${{ vars.SSH_USERNAME }}
+      folder: ${{ vars.SSH_FOLDER }}
+      paths: |
         [
           {
-            "local": ".",
-            "remote": "/themes/${{ github.event.repository.name }}/",
+            "from": ".",
+            "to": "/themes/${{ github.event.repository.name }}/",
             "exclude": ".git* .github* node_modules"
           }
         ]
