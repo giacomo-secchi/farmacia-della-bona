@@ -1,24 +1,39 @@
-name: Deploy to Cloudways
+name: Build and Deploy to Cloudways
 
 on:
   push:
     branches: [ main ]
 
 jobs:
+  build:
+    uses: WritePoetry/reusable-workflows/.github/workflows/build.yml@main
+    secrets: inherit
+
+
   deploy:
-    uses: WritePoetry/reusable-workflows/.github/workflows/sync-folders-to-server.yml@v2
-    with:
-      host: ${{ vars.HOST }}
-      username: ${{ vars.USERNAME }}
-      folder: ${{ vars.FOLDER }}
-      paths: |
-        [
-          {
-            "from": ".",
-            "to": "/themes/${{ github.event.repository.name }}/",
-            "exclude": ".git* .github* node_modules"
-          }
-        ]
-    secrets:
-      ssh-key: ${{ secrets.SSH_KEY }}
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download Build Artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: ${{ github.event.repository.name }}-build
+          path: .
+
+      - name: Sync to Cloudways
+        uses: WritePoetry/reusable-workflows/.github/workflows/sync-folders-to-server.yml@v2
+        with:
+          host: ${{ vars.HOST }}
+          username: ${{ vars.USERNAME }}
+          folder: ${{ vars.FOLDER }}
+          paths: |
+            [
+              {
+                "from": ".",
+                "to": "/themes/${{ github.event.repository.name }}/",
+                "exclude": ".git* .github* node_modules"
+              }
+            ]
+        secrets:
+          ssh-key: ${{ secrets.SSH_KEY }}
 
