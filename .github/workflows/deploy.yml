@@ -21,6 +21,14 @@ jobs:
       host: ${{ vars.HOST }}
       username: ${{ vars.USERNAME }}
       folder: ${{ vars.FOLDER }}
+      paths: |
+        [
+          {
+            "from": ".",
+            "to": "/themes/${{ github.event.repository.name }}/",
+            "exclude": ".git* .github* node_modules"
+          }
+        ]
     secrets:
       ssh-key: ${{ secrets.SSH_KEY }}
 
