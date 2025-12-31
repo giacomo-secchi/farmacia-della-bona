@@ -31,4 +31,3 @@ jobs:
         ]
     secrets:
       ssh-key: ${{ secrets.SSH_KEY }}
-
