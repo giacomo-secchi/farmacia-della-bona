@@ -1,0 +1,33 @@
+name: Build and Deploy to Cloudways
+
+on:
+  push:
+    branches: [ main ]
+permissions:
+  contents: write
+  packages: write
+  actions: read 
+
+jobs:
+  build:
+    uses: WritePoetry/reusable-workflows/.github/workflows/build.yml@main
+    secrets: inherit
+
+
+  deploy:
+    needs: build
+    uses: WritePoetry/reusable-workflows/.github/workflows/remote-sync.yml@main
+    with:
+      host: ${{ vars.HOST }}
+      username: ${{ vars.USERNAME }}
+      folder: ${{ vars.FOLDER }}
+      paths: |
+        [
+          {
+            "from": ".",
+            "to": "/themes/${{ github.event.repository.name }}/",
+            "exclude": ".git* .github* node_modules"
+          }
+        ]
+    secrets:
+      ssh-key: ${{ secrets.SSH_KEY }}
