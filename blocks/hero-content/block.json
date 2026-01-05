@@ -1,6 +1,6 @@
 {
     "name": "acf/hero-content",
-    "title": "Hero",
+    "title": "Hero Content",
     "description": "A custom testimonial block that uses ACF fields.",
     "style": [ "file:./testimonial.css" ],
     "category": "formatting",
