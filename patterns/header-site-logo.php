@@ -21,12 +21,21 @@
 <!-- wp:term-name {"textAlign":"center","isLink":true} /-->
 <!-- /wp:term-template --></div>
 <!-- /wp:terms-query -->
+		<?php
 
+			$about_page = get_page_by_path( 'chi-siamo' );
+			$about_id   = $about_page?->ID ?? 0;
+			$about_url  = $about_id ? get_permalink( $about_id ) : home_url( '/chi-siamo/' );
+
+			$contact_page = get_page_by_path( 'contattaci' );
+			$contact_id   = $contact_page?->ID ?? 0;
+			$contact_url  = $contact_id ? get_permalink( $contact_id ) : home_url( '/contattaci/' );
+		?>
 <!-- wp:navigation {"textColor":"primary","metadata":{"ignoredHookedBlocks":["woocommerce/customer-account","woocommerce/mini-cart"]},"style":{"typography":{"textTransform":"uppercase","fontStyle":"normal","fontWeight":"700"},"spacing":{"blockGap":"var:preset|spacing|50"},"layout":{"selfStretch":"fit","flexSize":null}},"fontSize":"x-small","layout":{"type":"flex","setCascadingProperties":true},"ariaLabel":"<?php esc_attr_e( 'Main menu', 'farmacia-della-bona' ); ?>"} -->
-	<!-- wp:navigation-link {"label":"<?php esc_html_e( 'Servizi', 'farmacia-della-bona' ); ?>","url":"<?php echo esc_url( home_url( '/servizi/' ) ); ?>"} /-->
-	<!-- wp:navigation-link {"label":"<?php esc_html_e( 'Eventi', 'farmacia-della-bona' ); ?>","url":"<?php echo esc_url( home_url( '/eventi/' ) ); ?>"} /-->
-	<!-- wp:navigation-link {"label":"<?php esc_html_e( 'Chi Siamo', 'farmacia-della-bona' ); ?>","type":"page","id":71,"url":"<?php echo esc_url( home_url( '/chi-siamo/' ) ); ?>","kind":"post-type"} /-->
-	<!-- wp:navigation-link {"label":"<?php esc_html_e( 'Contattaci', 'farmacia-della-bona' ); ?>","type":"page","id":75,"url":"<?php echo esc_url( home_url( '/contattaci/' ) ); ?>","kind":"post-type"} /-->
+	<!-- wp:navigation-link {"label":"<?php esc_html_e( 'Servizi', 'farmacia-della-bona' ); ?>","type":"service","url":"<?php echo esc_url( get_post_type_archive_link( 'service' ) ); ?>","kind":"post-type"} /-->
+	<!-- wp:navigation-link {"label":"<?php esc_html_e( 'Eventi', 'farmacia-della-bona' ); ?>","type":"event","url":"<?php echo esc_url( get_post_type_archive_link( 'event' ) ); ?>","kind":"post-type"} /-->
+	<!-- wp:navigation-link {"label":"<?php esc_html_e( 'Chi Siamo', 'farmacia-della-bona' ); ?>","type":"page","id":<?php echo $about_id; ?>,"url":"<?php echo esc_url( $about_url ); ?>","kind":"post-type"} /-->
+	<!-- wp:navigation-link {"label":"<?php esc_html_e( 'Contattaci', 'farmacia-della-bona' ); ?>","type":"page","id":<?php echo $contact_id; ?>,"url":"<?php echo esc_url( $contact_url ); ?>","kind":"post-type"} /-->
 	<!-- /wp:navigation --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
