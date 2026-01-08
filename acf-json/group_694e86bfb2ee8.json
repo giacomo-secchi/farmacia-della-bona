@@ -1,6 +1,6 @@
 {
     "key": "group_694e86bfb2ee8",
-    "title": "Evento",
+    "title": "Event Details",
     "fields": [
         {
             "key": "field_694e86c114f62",
@@ -42,5 +42,5 @@
     "description": "",
     "show_in_rest": 0,
     "display_title": "",
-    "modified": 1767886062
+    "modified": 1767886742
 }

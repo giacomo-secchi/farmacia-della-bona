@@ -1,6 +1,6 @@
 {
     "key": "group_694ba2ba207a2",
-    "title": "Reparto",
+    "title": "Department Detalis",
     "fields": [
         {
             "key": "field_694ba4ffbb798",
@@ -49,5 +49,5 @@
     "description": "",
     "show_in_rest": 0,
     "display_title": "",
-    "modified": 1767885895
+    "modified": 1767886777
 }
