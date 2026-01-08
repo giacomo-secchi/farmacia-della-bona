@@ -1,15 +1,15 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/theme.json",
 	"version": 3,
-	"slug": "section-1",
-	"title": "Style 1",
+	"slug": "section-2",
+	"title": "Style 2",
 	"blockTypes": [
 		"core/group"
 	],
 	"styles": {
         "css": "& > p { text-transform: uppercase; }",
         "color": {
-            "text": "var(--wp--preset--color--contrast)",
+            "text": "var(--wp--preset--color--base)",
             "gradient": "var(--wp--preset--gradient--gradient-2)"
         },
         "typography": {
@@ -26,13 +26,14 @@
                 "top": "var(--wp--preset--spacing--60)"
             }
         },
+        "shadow": "var(--wp--preset--shadow--inner)",
         "elements": { 
             "heading": {
                 "typography": {
                     "fontSize": "48px"
                 },
 				"color": {
-					"text": "var(--wp--preset--color--primary)"
+					"text": "var(--wp--preset--color--base)"
 				},
                 "spacing":{
                     "margin": {

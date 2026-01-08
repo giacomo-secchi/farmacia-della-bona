@@ -1,0 +1,74 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/theme.json",
+    "version": 3,
+    "slug": "post-card",
+    "title": "Card Post",
+    "blockTypes": ["core/group"],
+    "styles": {
+        "border": {
+            "radius": "var(--wp--preset--border-radius--large)"
+        },
+        "color": {
+            "text": "var(--wp--preset--color--contrast)",
+            "background": "var(--wp--preset--color--base)"
+        },
+        "css": "& { overflow: hidden; }",
+        "spacing": {
+            "padding": {
+                "right": "0",
+                "left": "0"
+            }
+        },
+        
+        "blocks": {
+            
+            "core/post-author-name": {
+                "spacing": {
+                    "padding": {
+                        "right": "var(--wp--preset--spacing--40)",
+                        "left": "var(--wp--preset--spacing--40)"
+                    }
+                }
+            },
+            "core/post-title": {
+                "spacing": {
+                    "padding": {
+                        "right": "var(--wp--preset--spacing--40)",
+                        "left": "var(--wp--preset--spacing--40)"
+                    }
+                }
+            },
+            "core/post-excerpt": {
+                "spacing": {
+                    "padding": {
+                        "right": "var(--wp--preset--spacing--40)",
+                        "left": "var(--wp--preset--spacing--40)"
+                    }
+                }
+            }
+        },
+        "elements": {
+            "link": {
+                "color": {
+                    "text": "var(--wp--preset--color--contrast)"
+                }
+            },
+            "heading": {
+                "color": {
+                    "text": "var(--wp--preset--color--black)"
+                },
+                "spacing":{
+                    "margin": {
+                        "top":"var:preset|spacing|30",
+                        "bottom":"0"
+                    }
+                },
+                "typography": {
+                    "fontSize": "var(--wp--preset--font-size--small)",
+                    "lineHeight": "1.6",
+                    "fontWeight": "600"
+                }
+            }
+        }
+    }
+}

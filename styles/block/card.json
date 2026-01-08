@@ -3,7 +3,11 @@
     "version": 3,
     "slug": "card",
     "title": "Card",
-    "blockTypes": ["core/group"],
+    "blockTypes": [
+        "core/group",
+        "core/columns",
+        "core/column"
+    ],
     "styles": {
         "border": {
             "radius": "var(--wp--preset--border-radius--large)"
