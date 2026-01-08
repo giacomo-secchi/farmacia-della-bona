@@ -74,8 +74,8 @@
         },
         {
             "key": "field_69451c10c6905",
-            "label": "Link Text",
-            "name": "hero_link_text",
+            "label": "Button Text",
+            "name": "hero_button_text",
             "aria-label": "",
             "type": "text",
             "instructions": "",
@@ -143,9 +143,9 @@
         {
             "key": "field_6943ddd6b1b77",
             "label": "Background Color",
-            "name": "hero_color",
+            "name": "hero_overlay_color_palette",
             "aria-label": "",
-            "type": "color_picker",
+            "type": "select",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -154,14 +154,17 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "enable_opacity": 1,
-            "return_format": "string",
+            "choices": [],
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
             "allow_in_bindings": 0,
-            "show_custom_palette": 0,
-            "show_color_wheel": 1,
-            "custom_palette_source": "",
-            "palette_colors": ""
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "create_options": 0,
+            "save_options": 0
         },
         {
             "key": "field_6943de32bf8fa",
@@ -208,6 +211,33 @@
                     "parent_repeater": "field_6943de32bf8fa"
                 }
             ]
+        },
+        {
+            "key": "field_695e6cb6fbf7b",
+            "label": "Hero Product",
+            "name": "hero_product_id",
+            "aria-label": "",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "product"
+            ],
+            "post_status": "",
+            "taxonomy": "",
+            "return_format": "id",
+            "multiple": 0,
+            "allow_null": 0,
+            "allow_in_bindings": 0,
+            "bidirectional": 0,
+            "ui": 1,
+            "bidirectional_target": []
         }
     ],
     "location": [
@@ -236,5 +266,5 @@
     "description": "",
     "show_in_rest": 0,
     "display_title": "",
-    "modified": 1766136877
+    "modified": 1767881044
 }
