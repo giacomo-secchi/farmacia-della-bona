@@ -16,7 +16,7 @@
 <!-- /wp:heading --></div>
 <!-- /wp:group -->
 
-<!-- wp:query {"queryId":3,"query":{"perPage":3,"pages":0,"offset":0,"postType":"servizio","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"parents":[],"format":[]},"align":"wide"} -->
+<!-- wp:query {"queryId":3,"query":{"perPage":3,"pages":0,"offset":0,"postType":"service","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"parents":[],"format":[]},"align":"wide"} -->
 <div class="wp-block-query alignwide"><!-- wp:post-template {"layout":{"type":"grid","columnCount":3}} -->
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40","left":"var:preset|spacing|40","right":"var:preset|spacing|40"}},"border":{"radius":{"topLeft":"var:preset|border-radius|large","topRight":"var:preset|border-radius|large","bottomLeft":"var:preset|border-radius|large","bottomRight":"var:preset|border-radius|large"}},"elements":{"link":{"color":{"text":"var:preset|color|contrast"}}}},"backgroundColor":"base","textColor":"contrast","layout":{"type":"constrained"}} -->
 <div class="wp-block-group has-contrast-color has-base-background-color has-text-color has-background has-link-color" style="border-top-left-radius:var(--wp--preset--border-radius--large);border-top-right-radius:var(--wp--preset--border-radius--large);border-bottom-left-radius:var(--wp--preset--border-radius--large);border-bottom-right-radius:var(--wp--preset--border-radius--large);padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)"><!-- wp:post-featured-image {"width":"80px","height":"80px","align":"center","style":{"border":{"radius":{"topLeft":"100%","topRight":"100%","bottomLeft":"100%","bottomRight":"100%"}}}} /-->
@@ -45,4 +45,4 @@
 <!-- /wp:group -->
 
 
-<!-- wp:post-terms {"term":"categoria-servizio"} /-->
+<!-- wp:post-terms {"term":"service_cat"} /-->
