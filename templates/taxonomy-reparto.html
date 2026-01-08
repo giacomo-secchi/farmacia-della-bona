@@ -1,32 +1,71 @@
 <!-- wp:template-part {"slug":"header","tagName":"header","className":"site-header"} /-->
 
-<!-- wp:acf/hero {"name":"acf/hero","mode":"preview"} /-->
+<!-- wp:pattern {"slug":"farmacia-della-bona/hero-department"} /-->
+
+
+ 
+
+
+<!-- wp:columns -->
+<div class="wp-block-columns"><!-- wp:column {"width":"25%"} -->
+<div class="wp-block-column" style="flex-basis:25%">
+
+
+    <!-- wp:query {"query":{"postType":"team_member","perPage":1,"inherit":false},"namespace":"staff-highlight-query"} -->
+    <div class="wp-block-query"><!-- wp:post-template {"layout":{"type":"default","columnCount":3}} -->
+    <!-- wp:group {"className":"is-style-card","layout":{"type":"constrained"}} -->
+    <div class="wp-block-group is-style-card"><!-- wp:post-featured-image {"width":"80px","height":"80px","align":"center"} /-->
+
+    <!-- wp:post-title {"textAlign":"center"} /-->
+
+    <!-- wp:post-content /--></div>
+    <!-- /wp:group -->
+    <!-- /wp:post-template --></div>
+    <!-- /wp:query -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"25%"} -->
+<div class="wp-block-column" style="flex-basis:25%">
+    <!-- wp:query {"query":{"postType":"evento","perPage":2,"inherit":false},"namespace":"event-highlight-query"} -->
+    <div class="wp-block-query"><!-- wp:post-template {"layout":{"type":"default","columnCount":3}} -->
+    <!-- wp:group {"className":"is-style-card","layout":{"type":"constrained"}} -->
+    <div class="wp-block-group is-style-card"><!-- wp:post-featured-image {"width":"80px","height":"80px","align":"center"} /-->
+
+    <!-- wp:post-title {"textAlign":"center"} /-->
+
+    <!-- wp:post-content /--></div>
+    <!-- /wp:group -->
+    <!-- /wp:post-template --></div>
+    <!-- /wp:query -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"50%"} -->
+<div class="wp-block-column" style="flex-basis:50%">
+
+
+     <!-- wp:query {"query":{"postType":"post","perPage":2,"sticky":"only","inherit":false},"namespace":"post-highlight-query"} -->
+    <div class="wp-block-query"><!-- wp:post-template {"layout":{"type":"grid","columnCount":2}} -->
+    <!-- wp:group {"className":"is-style-post-card","layout":{"type":"constrained"}} -->
+    <div class="wp-block-group is-style-post-card"><!-- wp:post-featured-image {"width":"100%","height":"","align":"center"} /-->
+    <!-- wp:post-title /-->
+    <!-- wp:post-author-name {"isLink":true} /-->
+
+    <!-- wp:post-excerpt {"moreText":"Leggi l'articolo","excerptLength":33} /--></div>
+    <!-- /wp:group -->
+    <!-- /wp:post-template --></div>
+    <!-- /wp:query -->
+
+</div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+
+ 
+    <!-- wp:pattern {"slug":"farmacia-della-bona/services-banner"} /-->
 
 
 
 
-<!-- wp:query {"query":{"postType":"team_member","perPage":2,"inherit":false},"namespace":"staff-highlight-query"} -->
-<div class="wp-block-query"><!-- wp:post-template {"layout":{"type":"grid","columnCount":3}} -->
-<!-- wp:group {"className":"is-style-card","layout":{"type":"constrained"}} -->
-<div class="wp-block-group is-style-card"><!-- wp:post-featured-image {"width":"80px","height":"80px","align":"center"} /-->
-
-<!-- wp:post-title {"textAlign":"center"} /-->
-
-<!-- wp:post-content /--></div>
-<!-- /wp:group -->
-<!-- /wp:post-template --></div>
-<!-- /wp:query -->
-
-
-
-<!-- wp:query {"query":{"postType":"evento","perPage":2,"inherit":false},"namespace":"event-highlight-query"} -->
-<div class="wp-block-query"><!-- wp:post-template {"layout":{"type":"grid","columnCount":3}} -->
-<!-- wp:group {"className":"is-style-card","layout":{"type":"constrained"}} -->
-<div class="wp-block-group is-style-card"><!-- wp:post-featured-image {"width":"80px","height":"80px","align":"center"} /-->
-
-<!-- wp:post-title {"textAlign":"center"} /-->
-
-<!-- wp:post-content /--></div>
-<!-- /wp:group -->
-<!-- /wp:post-template --></div>
-<!-- /wp:query -->
+<!-- wp:template-part {"slug":"footer","tagName":"footer","className":"site-footer"} /-->

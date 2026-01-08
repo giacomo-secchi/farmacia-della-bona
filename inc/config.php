@@ -1,6 +1,12 @@
 <?php
 
 
+
+add_filter( 'farmacia_della_bona_blocks_locations', function( $locations ) {
+    $locations[] = get_stylesheet_directory() . '/build';
+    return $locations;
+} );
+
 add_filter( 'farmaciadellabona_block_variations_config', function ( $config ) {
     
     // Aggiungiamo le varianti per il blocco Query
@@ -37,8 +43,101 @@ add_filter( 'farmaciadellabona_block_variations_config', function ( $config ) {
                     'callback'  => 'farmaciadellabona_filter_events_query'
                 ],
                 'scope'      => [ 'inserter' ], // Lo rende visibile nel menu dei blocchi.
+            ],
+            [
+                'name'       => 'post-highlight-query',
+                'title'      => __( 'Articoli in Evidenza', 'farmacia-della-bona' ),
+                'description' => __( 'Mostra gli articoli selezionati per questa categoria', 'farmacia-della-bona' ),
+                'isActive'   => [ 'namespace' ],
+                'attributes' => [
+                    'query'     => [
+                        'perPage'  => 2,
+                        'inherit'  => false, 
+                    ],
+                    'callback'  => 'farmaciadellabona_filter_posts_query'
+                ],
+                'scope'      => [ 'inserter' ]
             ]
         ],
+        'core/cover' => [
+            [
+                'name'      => 'hero-department',
+                'title'     => __( 'Hero Reparto', 'farmacia-della-bona' ),
+                'description' => __( 'Visualizza i dati inseriti per Reparto', 'farmacia-della-bona' ),
+                'isActive'   => [ 'namespace' ],
+                'attributes' => [
+                    'namespace'     => 'hero-department',
+                    'align'         => 'full',
+                    'dimRatio'      => 50,
+                    'style'      => [
+                        'spacing' => [
+                            'margin' => [
+                                'top'    => '0px',
+                                'bottom' => '0px',
+                            ],
+                            'padding' => [
+                                'top'    => 'var:preset|spacing|80',
+                                'left'    => 'var:preset|spacing|80',
+                                'bottom' => 'var:preset|spacing|80',
+                                'right' => 'var:preset|spacing|80',
+                            ],
+                        ],
+                    ],
+                    'url'           => 'hero_image',
+                    'acf_fields'    => [
+                        'hero_image',
+                        'hero_content',
+                        'hero_title',
+                        'hero_subtitle',
+                        'hero_list',
+                        'hero_button_link',
+                        'hero_button_text',
+                        'hero_product_id',
+                        'hero_overlay_color_palette_theme'
+                    ],
+                ],
+                'innerBlocks' => [
+                    [
+                        'name' => 'core/heading',
+                        'attributes' => [
+                            'level'   => 2,
+                            'content' => 'hero_title',
+                        ],
+                    ],
+                    [
+                        'name' => 'core/paragraph',
+                        'attributes' => [
+                            'content' => 'hero_content'
+                        ],
+                    ],
+                    [
+                        'name' => 'core/paragraph',
+                        'attributes' => [
+                            'content' => 'hero_subtitle'
+                        ],
+                    ],
+                    [
+                        'name' => 'core/buttons',
+                        'attributes' => [
+                            'layout' => [
+                                'type' => 'flex',
+                                'justifyContent' => 'center',
+                            ],
+                        ],
+                        'innerBlocks' => [
+                            [
+                                'name' => 'core/button',
+                                'attributes' => [
+                                    'text' => 'hero_button_text',
+                                    'url'  => 'hero_button_link',
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
+                'scope'      => [ 'inserter' ],
+            ]
+        ]
         
     ];
 
@@ -46,10 +145,13 @@ add_filter( 'farmaciadellabona_block_variations_config', function ( $config ) {
 } );
 
 
+
+
+
 // Logica per lo Staff
 function farmaciadellabona_filter_staff_query( $query, $block ) {
 
-    if ( is_tax( 'reparto' ) ) {
+    if ( is_tax( 'department' ) ) {
         $term_id = get_queried_object_id();
 
         // Recupera l'ID dello staff selezionato nel campo ACF.
@@ -85,4 +187,19 @@ function farmaciadellabona_filter_events_query( $query, $block ) {
     $query['order']    = 'ASC';
     return $query;
 }
+
+// Logica per gli Eventi
+function farmaciadellabona_filter_posts_query( $query, $block ) {
+    $current_cat_id = get_queried_object_id();
+    
+    $query['tax_query'] = [[
+        'taxonomy' => 'category', // cambia in 'event_cat' se usi una tassonomia custom
+        'field'    => 'term_id',
+        'terms'    => $current_cat_id,
+    ]];
+
+    return $query;
+    
+}
+
 
