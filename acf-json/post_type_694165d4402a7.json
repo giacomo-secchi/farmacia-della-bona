@@ -3,7 +3,7 @@
     "title": "Eventi",
     "menu_order": 0,
     "active": true,
-    "post_type": "evento",
+    "post_type": "event",
     "advanced_configuration": true,
     "import_source": "",
     "import_date": "",
@@ -87,5 +87,5 @@
     "delete_with_user": false,
     "register_meta_box_cb": "",
     "enter_title_here": "",
-    "modified": 1767691823
+    "modified": 1767885226
 }

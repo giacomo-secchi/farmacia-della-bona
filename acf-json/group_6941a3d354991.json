@@ -60,10 +60,10 @@
             },
             "post_type": [
                 "page",
-                "evento",
-                "servizio",
                 "post",
-                "member"
+                "event",
+                "service",
+                "team_member"
             ],
             "post_status": "",
             "taxonomy": "",
@@ -245,7 +245,7 @@
             {
                 "param": "taxonomy",
                 "operator": "==",
-                "value": "reparto"
+                "value": "department"
             }
         ],
         [
@@ -266,5 +266,5 @@
     "description": "",
     "show_in_rest": 0,
     "display_title": "",
-    "modified": 1767881044
+    "modified": 1767886007
 }

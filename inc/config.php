@@ -36,7 +36,7 @@ add_filter( 'farmaciadellabona_block_variations_config', function ( $config ) {
                 'attributes' => [
                     'namespace' => 'event-highlight-query',
                     'query'     => [
-                        'postType' => 'evento',
+                        'postType' => 'event',
                         'perPage'  => 2,
                         'inherit'  => false, 
                     ],
@@ -171,7 +171,7 @@ function farmaciadellabona_filter_staff_query( $query, $block ) {
 // Logica per gli Eventi
 function farmaciadellabona_filter_events_query( $query, $block ) {
    
-    $query['post_type'] = 'evento';
+    $query['post_type'] = 'event';
     $query['meta_query'] = [[
         'key'     => 'event_date',
         'value'   => date('Ymd'),
