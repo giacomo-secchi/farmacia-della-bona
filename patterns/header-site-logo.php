@@ -16,7 +16,7 @@
     </div>
 <!-- /wp:group -->
 
-<!-- wp:terms-query {"termQuery":{"perPage":10,"taxonomy":"reparto","order":"asc","orderBy":"name","include":[],"hideEmpty":false,"showNested":false,"inherit":false}} -->
+<!-- wp:terms-query {"termQuery":{"perPage":10,"taxonomy":"department","order":"asc","orderBy":"name","include":[],"hideEmpty":false,"showNested":false,"inherit":false}} -->
 <div class="wp-block-terms-query"><!-- wp:term-template {"style":{"typography":{"textTransform":"uppercase","fontStyle":"normal","fontWeight":"600"}},"fontSize":"x-small","layout":{"type":"grid","columnCount":3,"minimumColumnWidth":null}} -->
 <!-- wp:term-name {"textAlign":"center","isLink":true} /-->
 <!-- /wp:term-template --></div>
