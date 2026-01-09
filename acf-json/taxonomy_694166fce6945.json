@@ -6,7 +6,8 @@
     "taxonomy": "department",
     "object_type": [
         "event",
-        "service"
+        "service",
+        "post"
     ],
     "advanced_configuration": 1,
     "import_source": "",
@@ -73,5 +74,5 @@
     "meta_box": "default",
     "meta_box_cb": "",
     "meta_box_sanitize_cb": "",
-    "modified": 1767888839
+    "modified": 1767987745
 }
