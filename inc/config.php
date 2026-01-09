@@ -50,6 +50,7 @@ add_filter( 'farmaciadellabona_block_variations_config', function ( $config ) {
                 'description' => __( 'Mostra gli articoli selezionati per questa categoria', 'farmacia-della-bona' ),
                 'isActive'   => [ 'namespace' ],
                 'attributes' => [
+                    'namespace' => 'post-highlight-query',
                     'query'     => [
                         'perPage'  => 2,
                         'inherit'  => false, 
@@ -192,9 +193,9 @@ function farmaciadellabona_filter_events_query( $query, $block ) {
 // Logica per gli Eventi
 function farmaciadellabona_filter_posts_query( $query, $block ) {
     $current_cat_id = get_queried_object_id();
-    
+
     $query['tax_query'] = [[
-        'taxonomy' => 'category', // cambia in 'event_cat' se usi una tassonomia custom
+        'taxonomy' => 'department',
         'field'    => 'term_id',
         'terms'    => $current_cat_id,
     ]];
