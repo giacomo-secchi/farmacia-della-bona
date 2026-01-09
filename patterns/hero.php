@@ -21,8 +21,9 @@
 <p>hero_subtitle</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:list -->
-<ul class="wp-block-list"><!-- wp:list-item -->
+
+<!-- wp:list {"className":"is-style-no-style","fontSize":"large"} -->
+<ul class="wp-block-list is-style-no-style has-large-font-size"><!-- wp:list-item -->
 <li>hero_list_item</li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list -->

@@ -138,7 +138,7 @@ add_filter( 'render_block', function( $block_content, $block ) {
             case 'repeater':
                 $items = [];
     
-                foreach ( $field_value as $row ) {
+                foreach ( (array) $field_value as $row ) {
     
                     if ( ! is_array( $row ) ) {
                         continue;
@@ -153,13 +153,10 @@ add_filter( 'render_block', function( $block_content, $block ) {
 
                     $items[] = esc_html( (string) $first_val );
                 }
-
-                if ( ! empty( $items ) ) {
-                    // Tag-swap trick to multiply <li> while keeping the original block's attributes.
-                    $replacements[ $field_slug ] = implode( '</li><li>', $items );
-                } else {
-                    $empty_placeholders[] = $field_slug;
-                }
+ 
+                // Tag-swap trick to multiply <li> while keeping the original block's attributes.
+                $replacements[ $field_slug ] = implode( '</li><li>', $items );
+            
 
                 break;
                 

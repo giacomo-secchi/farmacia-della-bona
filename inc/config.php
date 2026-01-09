@@ -89,7 +89,7 @@ add_filter( 'farmaciadellabona_block_variations_config', function ( $config ) {
                         'hero_content',
                         'hero_title',
                         'hero_subtitle',
-                        'hero_list',
+                        'hero_list_item',
                         'hero_button_link',
                         'hero_button_text',
                         'hero_product_id',
