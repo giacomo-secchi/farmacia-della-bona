@@ -52,7 +52,7 @@
 <!-- wp:query {"queryId":9,"query":{"postType":"post","perPage":2,"inherit":false},"namespace":"post-highlight-query"} -->
 <div class="wp-block-query"><!-- wp:post-template {"layout":{"type":"grid","columnCount":2}} -->
 <!-- wp:group {"className":"is-style-card-full-bleed","layout":{"type":"constrained"}} -->
-<div class="wp-block-group is-style-card-full-bleed"><!-- wp:post-featured-image {"aspectRatio":"auto","width":"100%","height":"180px","scale":"contain"} /-->
+<div class="wp-block-group is-style-card-full-bleed"><!-- wp:post-featured-image {"aspectRatio":"auto","width":"100%","height":"180px","scale":"cover"} /-->
 
 <!-- wp:post-title /-->
 
