@@ -45,6 +45,11 @@
 					"color": "#f5f5f5",
 					"name": "Neutral",
 					"slug": "neutral"
+				},
+				{
+					"color": "#413DC0",
+					"name": "Purple",
+					"slug": "purple"
 				}
 			]
 		},
