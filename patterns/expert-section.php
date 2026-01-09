@@ -18,9 +18,16 @@
 <div class="wp-block-column" style="flex-basis:25%"><!-- wp:query {"queryId":7,"query":{"postType":"team_member","perPage":1,"inherit":false},"namespace":"staff-highlight-query"} -->
 <div class="wp-block-query"><!-- wp:post-template {"layout":{"type":"default","columnCount":3}} -->
 <!-- wp:group {"className":"is-style-card","layout":{"type":"constrained"}} -->
-<div class="wp-block-group is-style-card"><!-- wp:post-featured-image {"width":"120px","height":"120px","align":"center"} /-->
+<div class="wp-block-group is-style-card"><!-- wp:post-featured-image {"width":"100%","align":"center"} /-->
 
-<!-- wp:post-title {"textAlign":"center"} /-->
+<!-- wp:group {"style":{"typography":{"fontStyle":"normal","fontWeight":"700"},"spacing":{"blockGap":"0px"}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group" style="font-weight:700"><!-- wp:paragraph -->
+<p>Esperto di&nbsp;</p>
+<!-- /wp:paragraph -->
+<!-- wp:term-name {"textAlign":"center"} /--></div>
+<!-- /wp:group -->
+
+<!-- wp:post-title {"textAlign":"left","level":3,"fontSize":"x-small","className":"expert-name"} /-->
 
 <!-- wp:post-content /--></div>
 <!-- /wp:group -->
@@ -33,7 +40,7 @@
 <div class="wp-block-group"><!-- wp:query {"queryId":8,"query":{"postType":"event","perPage":2,"inherit":false},"namespace":"event-highlight-query"} -->
 <div class="wp-block-query"><!-- wp:post-template {"layout":{"type":"default","columnCount":3}} -->
 <!-- wp:group {"className":"is-style-card","layout":{"type":"constrained"}} -->
-<div class="wp-block-group is-style-card"><!-- wp:post-featured-image {"width":"80px","height":"80px","align":"center"} /-->
+<div class="wp-block-group is-style-card"><!-- wp:post-featured-image {"aspectRatio":"auto","width":"100%","height":"180px","scale":"contain"} /-->
 
 <!-- wp:post-title {"textAlign":"center"} /-->
 

@@ -16,7 +16,8 @@
         "spacing": {
             "padding": {
                 "right": "0",
-                "left": "0"
+                "left": "0",
+                "bottom": "var(--wp--preset--spacing--40)"
             }
         },
         
@@ -50,7 +51,7 @@
         "elements": {
             "link": {
                 "color": {
-                    "text": "var(--wp--preset--color--contrast)"
+                    "text": "var(--wp--preset--color--primary)"
                 }
             },
             "heading": {
@@ -59,8 +60,7 @@
                 },
                 "spacing":{
                     "margin": {
-                        "top":"var:preset|spacing|30",
-                        "bottom":"0"
+                        "top":"var:preset|spacing|30"
                     }
                 },
                 "typography": {
