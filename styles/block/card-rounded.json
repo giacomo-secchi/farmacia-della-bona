@@ -1,8 +1,8 @@
 {
     "$schema": "https://schemas.wp.org/trunk/theme.json",
     "version": 3,
-    "slug": "card",
-    "title": "Card",
+    "slug": "card-rounded",
+    "title": "Card with Rounded Image",
     "blockTypes": [
         "core/group",
         "core/columns",
@@ -22,6 +22,13 @@
                 "right": "var(--wp--preset--spacing--40)",
                 "bottom": "var(--wp--preset--spacing--40)",
                 "left": "var(--wp--preset--spacing--40)"
+            }
+        },
+        "blocks": {
+            "core/post-featured-image": {
+                "border": {
+                    "radius": "100%"
+                }
             }
         },
         "elements": {

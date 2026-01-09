@@ -153,10 +153,16 @@ add_filter( 'render_block', function( $block_content, $block ) {
 
                     $items[] = esc_html( (string) $first_val );
                 }
- 
-                // Tag-swap trick to multiply <li> while keeping the original block's attributes.
-                $replacements[ $field_slug ] = implode( '</li><li>', $items );
-            
+
+                if ( ! empty( $items ) ) {
+                    // Tag-swap trick to multiply <li> while keeping the original block's attributes.
+                    $replacements[ $field_slug ] = implode( '</li><li>', $items );
+                } else {
+
+                    $replacements[ $field_slug ] = ''; 
+                    $empty_placeholders[] = $field_slug;
+                    
+                }
 
                 break;
                 

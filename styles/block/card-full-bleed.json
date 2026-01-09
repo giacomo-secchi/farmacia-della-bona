@@ -1,8 +1,8 @@
 {
     "$schema": "https://schemas.wp.org/trunk/theme.json",
     "version": 3,
-    "slug": "post-card",
-    "title": "Card Post",
+    "slug": "card-full-bleed",
+    "title": "Card with Full-Bleed Image",
     "blockTypes": ["core/group"],
     "styles": {
         "border": {

@@ -7,7 +7,7 @@
 		"core/group"
 	],
 	"styles": {
-        "css": "& > p { text-transform: uppercase; }",
+        "css": "& > p,  & > .wp-block-term-description { text-transform: uppercase; }",
         "color": {
             "text": "var(--wp--preset--color--contrast)",
             "gradient": "var(--wp--preset--gradient--gradient-2)"
@@ -22,8 +22,8 @@
                 "top":"0"
             },
             "padding": {
-                "bottom": "var(--wp--preset--spacing--60)",
-                "top": "var(--wp--preset--spacing--60)"
+                "bottom": "var(--wp--preset--spacing--80)",
+                "top": "var(--wp--preset--spacing--80)"
             }
         },
         "elements": { 
