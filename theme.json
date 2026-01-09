@@ -50,6 +50,16 @@
 					"color": "#413DC0",
 					"name": "Purple",
 					"slug": "purple"
+				},
+				{
+					"color": "#812A2C",
+					"name": "Brown",
+					"slug": "brown"
+				},
+				{
+					"color": "#D2CC2C",
+					"name": "yellow",
+					"slug": "yellow"
 				}
 			]
 		},
