@@ -61,12 +61,12 @@ add_filter( 'farmaciadellabona_block_variations_config', function ( $config ) {
         ],
         'core/cover' => [
             [
-                'name'      => 'hero-department',
+                'name'      => 'hero',
                 'title'     => __( 'Hero Reparto', 'farmacia-della-bona' ),
                 'description' => __( 'Visualizza i dati inseriti per Reparto', 'farmacia-della-bona' ),
                 'isActive'   => [ 'namespace' ],
                 'attributes' => [
-                    'namespace'     => 'hero-department',
+                    'namespace'     => 'hero',
                     'align'         => 'full',
                     'dimRatio'      => 50,
                     'style'      => [
@@ -93,7 +93,7 @@ add_filter( 'farmaciadellabona_block_variations_config', function ( $config ) {
                         'hero_button_link',
                         'hero_button_text',
                         'hero_product_id',
-                        'hero_overlay_color_palette_theme'
+                        'hero_overlay_color_palette'
                     ],
                 ],
                 'innerBlocks' => [

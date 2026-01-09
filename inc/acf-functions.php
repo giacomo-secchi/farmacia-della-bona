@@ -5,15 +5,15 @@
  * Path generated: ['color', 'palette', 'default']
  */
 add_filter( 'acf/load_field', function( $field ) {
- 
+
     // Intercettiamo solo i campi con la nostra convenzione '_color_palette_'
-    if ( $field['type'] !== 'select' || ! str_contains( $field['name'], '_color_palette_' ) ) {
+    if ( $field['type'] !== 'select' || ! str_contains( $field['name'], '_color_palette' ) ) {
         return $field;
     }
 
     // Estraiamo il target (es: 'all', 'theme', 'default')
-    $target = explode( '_color_palette_', $field['name'] )[1];
-    
+    $target = explode( '_color_palette', $field['name'] )[1];
+
     // Definiamo le sorgenti. Se 'all', includiamo anche 'custom' per i plugin.
     $sources = ( empty( $suffix ) ) ? ['theme', 'default', 'custom'] : [$target];
 

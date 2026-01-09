@@ -2,37 +2,54 @@
 /**
  * Title: Hero Banner
  * Slug: farmacia-della-bona/hero
- * Categories: farmacia-della-bona-patterns
+ * Categories: hero, banner, farmacia-della-bona-patterns
  */
 ?>
 
-<!-- wp:group {"metadata":{"name":"Hero Section","categories":["powder-hero"],"patternName":"powder/hero-columns-text-image-contrast"},"align":"full","style":{"spacing":{"margin":{"top":"0px"},"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|80"}},"elements":{"link":{"color":{"text":"var:preset|color|base"}}},"background":{"backgroundImage":{"url":"http://farmacia-della-bona.local/wp-content/uploads/2025/12/slide-1.png","id":181,"source":"file","title":"slide-1"},"backgroundSize":"cover"}},"backgroundColor":"contrast","textColor":"base","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull has-base-color has-contrast-background-color has-text-color has-background has-link-color" style="margin-top:0px;padding-top:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--80)"><!-- wp:columns {"verticalAlignment":"center","align":"wide","className":"is-style-column-reverse","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|60","left":"var:preset|spacing|80"}}}} -->
-<div class="wp-block-columns alignwide are-vertically-aligned-center is-style-column-reverse"><!-- wp:column {"verticalAlignment":"center"} -->
-<div class="wp-block-column is-vertically-aligned-center"><!-- wp:group {"style":{"spacing":{"blockGap":"10px"}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
-<div class="wp-block-group"><!-- wp:paragraph {"style":{"typography":{"textTransform":"uppercase","fontStyle":"normal","fontWeight":"400","lineHeight":"1"}},"fontSize":"x-small"} -->
-<p class="has-x-small-font-size" style="font-style:normal;font-weight:400;line-height:1;text-transform:uppercase">Farmacia Della Bona</p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:group -->
-
-<!-- wp:heading {"style":{"typography":{"fontSize":"48px"}}} -->
-<h2 class="wp-block-heading" style="font-size:48px">Ci prendiamo <br>cura di te dal 1954.</h2>
+<!-- wp:cover {"url":"hero_image","dimRatio":50,"overlayColor":"hero_overlay_color_palette","isUserOverlayColor":true,"isDark":false,"namespace":"hero","align":"full","className":"is-style-background-2","style":{"spacing":{"margin":{"top":"0","bottom":"0"},"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|80"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-cover alignfull is-light is-style-background-2" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--80)"><img class="wp-block-cover__image-background" alt="" src="hero_image" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-hero_overlay_color_palette-background-color has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:columns {"verticalAlignment":"center","align":"wide","powderMotion":true,"powderMotionEffect":"fadeInUp","powderDuration":1,"powderMotionDistance":"60"} -->
+<div class="wp-block-columns alignwide are-vertically-aligned-center" data-motion="fadeInUp" data-duration="1" data-distance="60"><!-- wp:column {"verticalAlignment":"center","layout":{"type":"constrained","justifyContent":"right"}} -->
+<div class="wp-block-column is-vertically-aligned-center"><!-- wp:heading {"style":{"typography":{"fontSize":"48px"}}} -->
+<h2 class="wp-block-heading" style="font-size:48px">hero_title</h2>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"var:preset|spacing|20"}}}} -->
-<p style="margin-top:var(--wp--preset--spacing--20)">La Farmacia Della Bona si è sempre dedicata con cura alle richieste dei clienti, ponendo particolare interessa all'educazione sanitaria ed offrendo un'ampia gamma di prodotti disponibili.</p>
+<!-- wp:paragraph -->
+<p>hero_content</p>
 <!-- /wp:paragraph -->
- 
 
-<!-- wp:buttons {"layout":{"type":"flex"}} -->
-<div class="wp-block-buttons"><!-- wp:button {"textColor":"base","className":"is-style-fill","style":{"elements":{"link":{"color":{"text":"var:preset|color|base"}}}}} -->
-<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-base-color has-text-color has-link-color wp-element-button" href="<?php echo esc_url( home_url( '/chi-siamo/' ) ); ?>">Scopri chi siamo →</a></div>
+<!-- wp:paragraph -->
+<p>hero_subtitle</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li>hero_list_item</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"left"}} -->
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="hero_button_link">hero_button_text</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column -->
 
-<!-- wp:column {"verticalAlignment":"center"} -->
-<div class="wp-block-column is-vertically-aligned-center"></div>
+<!-- wp:column {"verticalAlignment":"center","layout":{"type":"constrained","contentSize":"300px"}} -->
+<div class="wp-block-column is-vertically-aligned-center"><!-- wp:group {"className":"is-style-card","layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-card"><!-- wp:woocommerce/single-product {"productId":111} -->
+<div class="wp-block-woocommerce-single-product woocommerce"><!-- wp:columns -->
+<div class="wp-block-columns"><!-- wp:column {"width":""} -->
+<div class="wp-block-column"><!-- wp:woocommerce/product-image {"showSaleBadge":false,"isDescendentOfSingleProductBlock":true} -->
+<!-- wp:woocommerce/product-sale-badge {"align":"right"} /-->
+<!-- /wp:woocommerce/product-image -->
+
+<!-- wp:post-title {"textAlign":"center","level":3,"isLink":true,"align":"center","__woocommerceNamespace":"woocommerce/product-query/product-title"} /-->
+
+<!-- wp:woocommerce/product-summary {"isDescendentOfSingleProductBlock":true} /--></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
-<!-- /wp:group -->
+<!-- /wp:woocommerce/single-product --></div>
+<!-- /wp:group --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div></div>
+<!-- /wp:cover -->

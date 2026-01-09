@@ -1,7 +1,7 @@
 <?php
 /**
- * Title: Hero Banner with Product
- * Slug: farmacia-della-bona/hero-with-product
+ * Title: Hero Banner
+ * Slug: farmacia-della-bona/hero-hold
  * Categories: farmacia-della-bona-patterns
  */
 ?>
@@ -22,36 +22,17 @@
 <!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"var:preset|spacing|20"}}}} -->
 <p style="margin-top:var(--wp--preset--spacing--20)">La Farmacia Della Bona si è sempre dedicata con cura alle richieste dei clienti, ponendo particolare interessa all'educazione sanitaria ed offrendo un'ampia gamma di prodotti disponibili.</p>
 <!-- /wp:paragraph -->
-
-<!-- wp:shortcode -->
-[trustindex no-registration=google]
-<!-- /wp:shortcode -->
+ 
 
 <!-- wp:buttons {"layout":{"type":"flex"}} -->
 <div class="wp-block-buttons"><!-- wp:button {"textColor":"base","className":"is-style-fill","style":{"elements":{"link":{"color":{"text":"var:preset|color|base"}}}}} -->
-<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-base-color has-text-color has-link-color wp-element-button" href="#">Scopri chi siamo →</a></div>
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-base-color has-text-color has-link-color wp-element-button" href="<?php echo esc_url( home_url( '/chi-siamo/' ) ); ?>">Scopri chi siamo →</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column -->
 
 <!-- wp:column {"verticalAlignment":"center"} -->
-<div class="wp-block-column is-vertically-aligned-center"><!-- wp:woocommerce/single-product {"productId":111} -->
-<div class="wp-block-woocommerce-single-product woocommerce"><!-- wp:columns {"style":{"border":{"radius":{"topLeft":"var:preset|border-radius|small","topRight":"var:preset|border-radius|small","bottomLeft":"var:preset|border-radius|small","bottomRight":"var:preset|border-radius|small"}}},"backgroundColor":"base"} -->
-<div class="wp-block-columns has-base-background-color has-background" style="border-top-left-radius:var(--wp--preset--border-radius--small);border-top-right-radius:var(--wp--preset--border-radius--small);border-bottom-left-radius:var(--wp--preset--border-radius--small);border-bottom-right-radius:var(--wp--preset--border-radius--small)"><!-- wp:column -->
-<div class="wp-block-column"><!-- wp:woocommerce/product-image {"showSaleBadge":false,"isDescendentOfSingleProductBlock":true} -->
-<!-- wp:woocommerce/product-sale-badge {"align":"right"} /-->
-<!-- /wp:woocommerce/product-image -->
-
-<!-- wp:post-title {"textAlign":"","isLink":true,"align":"right","__woocommerceNamespace":"woocommerce/product-query/product-title"} /-->
-
-<!-- wp:woocommerce/product-rating {"isDescendentOfSingleProductBlock":true} /-->
-
-<!-- wp:woocommerce/product-price {"isDescendentOfSingleProductBlock":true} /-->
-
-<!-- wp:woocommerce/product-summary {"isDescendentOfSingleProductBlock":true} /--></div>
-<!-- /wp:column --></div>
-<!-- /wp:columns --></div>
-<!-- /wp:woocommerce/single-product --></div>
+<div class="wp-block-column is-vertically-aligned-center"></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
 <!-- /wp:group -->
