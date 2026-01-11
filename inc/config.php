@@ -71,7 +71,7 @@ add_filter( 'farmaciadellabona_block_variations_config', function ( $config ) {
                         'perPage'  => 6,
                         'inherit'  => false, 
                     ],
-                    'callback'  => 'farmaciadellabona_filter_posts_query'
+                    'callback'  => 'farmaciadellabona_filter_services_by_current_cat'
                 ],
                 'scope'      => [ 'inserter' ],
             ],
@@ -221,6 +221,8 @@ function farmaciadellabona_filter_events_query( $query, $block ) {
 
 // Logica per gli Eventi
 function farmaciadellabona_filter_posts_query( $query, $block ) {
+
+ 
     $current_cat_id = get_queried_object_id();
 
     $query['tax_query'] = [[
@@ -233,4 +235,19 @@ function farmaciadellabona_filter_posts_query( $query, $block ) {
     
 }
 
+function farmaciadellabona_filter_services_by_current_cat( $query, $block ) {
+
+ 
+    $current_cat_id = get_queried_object_id();
+    $query['post_type'] = 'service';
+    
+    $query['tax_query'] = [[
+        'taxonomy' => 'department',
+        'field'    => 'term_id',
+        'terms'    => $current_cat_id,
+    ]];
+
+    return $query;
+    
+}
 
