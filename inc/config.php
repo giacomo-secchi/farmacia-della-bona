@@ -58,9 +58,38 @@ add_filter( 'farmaciadellabona_block_variations_config', function ( $config ) {
                     'callback'  => 'farmaciadellabona_filter_posts_query'
                 ],
                 'scope'      => [ 'inserter' ]
-            ]
+            ],
+            [
+                'name'       => 'service-category-query',
+                'title'      => __( 'Servizi della Categoria Corrente', 'farmacia-della-bona' ),
+                'description' => __( 'Filtra i servizi in base alla categoria visualizzata', 'farmacia-della-bona' ),
+                'isActive'   => [ 'namespace' ],
+                'attributes' => [
+                    'namespace' => 'service-category-query',
+                    'query'     => [
+                        'postType' => 'service',
+                        'perPage'  => 6,
+                        'inherit'  => false, 
+                    ],
+                    'callback'  => 'farmaciadellabona_filter_posts_query'
+                ],
+                'scope'      => [ 'inserter' ],
+            ],
         ],
         'core/cover' => [
+            [
+                'name'      => 'service-section',
+                'title'     => __( 'Sezione Servizi del Reparto', 'farmacia-della-bona' ),
+                'description' => __( 'Visualizza servizi disponibili per il Reparto', 'farmacia-della-bona' ),
+                'isActive'   => [ 'namespace' ],
+                'attributes' => [
+                    'namespace'     => 'service-section',
+                    'acf_fields'    => [
+                        'section_department_service_image'
+                    ],
+
+                ],
+            ],
             [
                 'name'      => 'hero',
                 'title'     => __( 'Hero Reparto', 'farmacia-della-bona' ),

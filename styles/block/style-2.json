@@ -4,7 +4,8 @@
 	"slug": "section-2",
 	"title": "Style 2",
 	"blockTypes": [
-		"core/group"
+		"core/group",
+        "core/cover"
 	],
 	"styles": {
         "css": "& > p { text-transform: uppercase; }",

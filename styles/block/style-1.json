@@ -4,7 +4,8 @@
 	"slug": "section-1",
 	"title": "Style 1",
 	"blockTypes": [
-		"core/group"
+		"core/group",
+        "core/cover"
 	],
 	"styles": {
         "css": "& > p,  & > .wp-block-term-description { text-transform: uppercase; }",
