@@ -10,7 +10,7 @@
 					"slug": "gradient-1"
 				},
 				{
-					"gradient": "linear-gradient(to bottom, var(--wp--preset--color--base) calc(100% - 600px), var(--wp--preset--color--base) calc(100% - 300px), var(--wp--preset--color--secondary) 100%)",
+					"gradient": "linear-gradient(to bottom, var(--wp--preset--color--base) calc(100% - 600px), var(--wp--preset--color--base) calc(100% - 300px), var(--wp--preset--color--light-100) 100%)",
 					"name": "Vertical soft beige to white",
 					"slug": "gradient-2"
 				}

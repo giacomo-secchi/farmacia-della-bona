@@ -17,7 +17,7 @@
         },
         "color": {
             "text": "var:preset|color|contrast",
-            "gradient": "var:preset|gradient|gradient-2"
+            "gradient": "var:preset|gradient|gradient-1"
         },
         "typography": {
             "fontSize": "var:preset|font-size|x-small",
