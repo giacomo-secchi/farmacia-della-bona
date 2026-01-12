@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Expert Section
- * Slug: farmacia-della-bona/expert-section
+ * Slug: farmacia-della-bona/section-expert
  * Categories: farmacia-della-bona-patterns
  */
 ?>
@@ -9,8 +9,8 @@
 <!-- wp:group {"className":"is-style-section-1","align":"full","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull is-style-section-1">
 
-<!-- wp:term-description {"textAlign":"center"} /-->
-<!-- wp:term-name {"textAlign":"center","level":2} /-->
+<!-- wp:term-description /-->
+<!-- wp:term-name {"level":2} /-->
 
 
 <!-- wp:columns {"align":"wide"} -->

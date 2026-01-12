@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Services Banner
- * Slug: farmacia-della-bona/services-section
+ * Slug: farmacia-della-bona/section-services
  * Categories: farmacia-della-bona-patterns
  */
 ?>
@@ -9,31 +9,12 @@
  
 <!-- wp:cover {"url":"section_department_service_image","dimRatio":20,"isDark":false,"namespace":"service-section","className":"is-style-section-2","align":"full"} -->
 <div class="wp-block-cover alignfull is-light is-style-section-2"><img class="wp-block-cover__image-background" alt="" src="section_department_service_image" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-background-dim-20 has-background-dim"></span><div class="wp-block-cover__inner-container">
-    <!-- wp:paragraph {"align":"center"} -->
-<p class="has-text-align-center">Servizi Disponibili.</p>
+<!-- wp:paragraph -->
+<p>Servizi Disponibili.</p>
 <!-- /wp:paragraph -->
-<!-- wp:term-name {"textAlign":"center","level":2} /-->
+<!-- wp:term-name {"level":2} /-->
 
 
-<!-- wp:query {"queryId":9,"query":{"postType":"post","perPage":2,"sticky":"only","inherit":false},"namespace":"post-highlight-query"} -->
-<div class="wp-block-query"><!-- wp:post-template {"layout":{"type":"grid","columnCount":2}} -->
-<!-- wp:group {"className":"is-style-card-full-bleed","layout":{"type":"constrained"}} -->
-<div class="wp-block-group is-style-card-full-bleed"><!-- wp:post-featured-image {"aspectRatio":"auto","width":"100%","height":"180px","scale":"cover"} /-->
-
-<!-- wp:post-title /-->
-
-<!-- wp:post-author-name {"isLink":true} /-->
-
-<!-- wp:post-excerpt {"moreText":"Leggi l'articolo","excerptLength":33} /--></div>
-<!-- /wp:group -->
-<!-- /wp:post-template --></div>
-<!-- /wp:query -->
-
-
-
-
-
- 
 <!-- wp:query {"query":{"postType":"service","perPage":10,"inherit":false},"namespace":"service-category-query","className":"alignwide"} -->
 <div class="wp-block-query alignwide"><!-- wp:post-template {"layout":{"type":"grid","columnCount":3}} -->
     <!-- wp:group {"className":"is-style-card","layout":{"type":"constrained"}} -->
