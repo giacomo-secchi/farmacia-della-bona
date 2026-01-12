@@ -1,0 +1,12 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"slug": "floating-bottom-right",
+	"title": "Floating Bottom Right",
+	"blockTypes": [
+		"jetpack/send-a-message"
+	],
+    "styles": {
+        "css": "&.is-style-floating-bottom-right { position: fixed;  bottom: var(--wp--preset--spacing--40 ); right: var(--wp--preset--spacing--40 ); }"
+    }
+}

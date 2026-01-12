@@ -140,8 +140,12 @@
 	},
 	"styles": {
 		"blocks": {
+			 
 			"core/navigation": {
 				"css": "& .wp-block-navigation-item:hover { color: var(--wp--preset--color--contrast); }"
+			},
+			"jetpack/whatsapp-button": {
+				"css": "& .whatsapp-block__button { border-radius: 50px !important; background-position: center !important; padding: var(--wp--preset--spacing--30) !important; box-shadow: var(--wp--preset--shadow--natural);}"
 			}
 		},
 		"elements": {

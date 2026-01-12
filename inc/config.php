@@ -236,7 +236,6 @@ function farmaciadellabona_filter_posts_query( $query, $block ) {
 }
 
 function farmaciadellabona_filter_services_by_current_cat( $query, $block ) {
-
  
     $current_cat_id = get_queried_object_id();
     $query['post_type'] = 'service';
