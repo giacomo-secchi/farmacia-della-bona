@@ -5,18 +5,14 @@
  * Categories: farmacia-della-bona-patterns
  */
 ?>
-
-
-
-<!-- wp:cover {"url":"section_department_service_image","dimRatio":50,"isDark":false,"namespace":"service-section","className":"is-style-section-2","align":"full"} -->
-<div class="wp-block-cover alignfull is-light is-style-section-2"><img class="wp-block-cover__image-background" alt="" src="section_department_service_image" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-background-dim"></span><div class="wp-block-cover__inner-container">
+ 
+ 
+<!-- wp:cover {"url":"section_department_service_image","dimRatio":20,"isDark":false,"namespace":"service-section","className":"is-style-section-2","align":"full"} -->
+<div class="wp-block-cover alignfull is-light is-style-section-2"><img class="wp-block-cover__image-background" alt="" src="section_department_service_image" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-background-dim-20 has-background-dim"></span><div class="wp-block-cover__inner-container">
     <!-- wp:paragraph {"align":"center"} -->
 <p class="has-text-align-center">Servizi Disponibili.</p>
 <!-- /wp:paragraph -->
-
-<!-- wp:heading {"textAlign":"center"} -->
-<h2 class="wp-block-heading has-text-align-center">I Nostri Servizi</h2>
-<!-- /wp:heading -->
+<!-- wp:term-name {"textAlign":"center","level":2} /-->
 
 
 <!-- wp:query {"queryId":9,"query":{"postType":"post","perPage":2,"sticky":"only","inherit":false},"namespace":"post-highlight-query"} -->
@@ -32,6 +28,8 @@
 <!-- /wp:group -->
 <!-- /wp:post-template --></div>
 <!-- /wp:query -->
+
+
 
 
 
@@ -75,6 +73,10 @@
 
 
 
+
+
+ 
+ 
 
 
  
