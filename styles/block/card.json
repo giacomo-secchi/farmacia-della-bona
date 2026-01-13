@@ -10,14 +10,6 @@
     ],
     "styles": {
         "blocks": {
-            "core/post-featured-image": {
-                "border": {
-                    "radius": "9999px"
-                },
-                "typography": {
-                    "aspectRatio": "1"
-                }
-            },
             "core/paragraph": {
                 "typography": {
                     "textAlign": "left",

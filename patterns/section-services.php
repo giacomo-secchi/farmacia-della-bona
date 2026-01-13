@@ -22,8 +22,8 @@
 
 <!-- wp:query {"query":{"postType":"service","perPage":8,"inherit":false},"namespace":"service-category-query","className":"alignwide"} -->
 <div class="wp-block-query alignwide"><!-- wp:post-template {"layout":{"type":"grid","columnCount":4}} -->
-    <!-- wp:group {"className":"is-style-card","layout":{"type":"constrained"}} -->
-    <div class="wp-block-group is-style-card">
+    <!-- wp:group {"className":"is-style-card-rounded","layout":{"type":"constrained"}} -->
+    <div class="wp-block-group is-style-card-rounded">
         
         <!-- wp:post-featured-image {"width":"80px","height":"80px" } /-->
 

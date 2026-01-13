@@ -12,15 +12,15 @@
 <!-- wp:term-description /-->
 <!-- wp:term-name {"level":2} /-->
 
-
 <!-- wp:columns {"align":"wide"} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"width":"25%"} -->
-<div class="wp-block-column" style="flex-basis:25%"><!-- wp:query {"queryId":7,"query":{"postType":"team_member","perPage":1,"inherit":false},"namespace":"staff-highlight-query"} -->
+<div class="wp-block-column" style="flex-basis:25%"><!-- wp:query {"query":{"postType":"team_member","perPage":1,"inherit":false},"namespace":"staff-highlight-query"} -->
 <div class="wp-block-query"><!-- wp:post-template {"layout":{"type":"default","columnCount":3}} -->
-<!-- wp:group {"className":"is-style-card","layout":{"type":"constrained"}} -->
-<div class="wp-block-group is-style-card"><!-- wp:post-featured-image {"width":"100%","align":"center"} /-->
+<!-- wp:group {"className":"is-style-card-rounded","layout":{"type":"constrained"}} -->
+<div class="wp-block-group is-style-card-rounded"><!-- wp:post-featured-image  /-->
+        <!-- wp:post-featured-image {"width":"120px","height":"120px" } /-->
 
-<!-- wp:group {"style":{"spacing":{"blockGap":"0px"}},"layout":{"type":"flex"}} -->
+<!-- wp:group {"layout":{"type":"flex"}} -->
 <div class="wp-block-group" >
 <!-- wp:post-title {"level":3} /-->
     
