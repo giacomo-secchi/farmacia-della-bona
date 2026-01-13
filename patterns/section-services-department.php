@@ -14,20 +14,20 @@
 <!-- /wp:paragraph -->
 <!-- wp:term-name {"textAlign":"center","level":2} /-->
 
-<!-- wp:query {"query":{"postType":"service","perPage":10,"inherit":false},"namespace":"service-category-query","className":"alignwide"} -->
-<div class="wp-block-query alignwide"><!-- wp:post-template {"layout":{"type":"grid","columnCount":3}} -->
-    <!-- wp:group {"className":"is-style-card","layout":{"type":"constrained"}} -->
-    <div class="wp-block-group is-style-card">
-        
-        <!-- wp:post-featured-image {"width":"80px","height":"80px"} /-->
 
-        <!-- wp:post-title /-->
-        
-        <!-- wp:post-content /--></div>
-    <!-- /wp:group -->
-    <!-- /wp:post-template -->
-</div>
+<!-- wp:query {"query":{"postType":"service","perPage":4,"inherit":false},"namespace":"service-category-query","className":"alignwide"} -->
+<div class="wp-block-query alignwide"><!-- wp:post-template {"layout":{"type":"grid","columnCount":4}} -->
+<!-- wp:group {"className":"is-style-card-rounded","layout":{"type":"constrained"}} -->
+<div class="wp-block-group is-style-card-rounded"><!-- wp:post-featured-image {"width":"80px","height":"80px"} /-->
+
+<!-- wp:post-title /-->
+
+<!-- wp:post-content /--></div>
+<!-- /wp:group -->
+<!-- /wp:post-template --></div>
 <!-- /wp:query -->
+
+
 
 
 

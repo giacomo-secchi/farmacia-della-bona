@@ -17,10 +17,10 @@
 <div class="wp-block-column" style="flex-basis:25%"><!-- wp:query {"query":{"postType":"team_member","perPage":1,"inherit":false},"namespace":"staff-highlight-query"} -->
 <div class="wp-block-query"><!-- wp:post-template {"layout":{"type":"default","columnCount":3}} -->
 <!-- wp:group {"className":"is-style-card-rounded","layout":{"type":"constrained"}} -->
-<div class="wp-block-group is-style-card-rounded"><!-- wp:post-featured-image  /-->
-        <!-- wp:post-featured-image {"width":"120px","height":"120px" } /-->
+<div class="wp-block-group is-style-card-rounded">
+        <!-- wp:post-featured-image {"width":"140px","height":"140px" } /-->
 
-<!-- wp:group {"layout":{"type":"flex"}} -->
+<!-- wp:group {"style":{"spacing":{"blockGap":"0px"}},"layout":{"type":"flex"}} -->
 <div class="wp-block-group" >
 <!-- wp:post-title {"level":3} /-->
     
