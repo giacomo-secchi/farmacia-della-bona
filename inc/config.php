@@ -239,14 +239,18 @@ function farmaciadellabona_filter_services_by_current_cat( $query, $block ) {
  
     $current_cat_id = get_queried_object_id();
     $query['post_type'] = 'service';
+    // $query['orderby'] = 'menu_order';
+    // $query['order']   = 'ASC';
     
+    if ( empty( $current_cat_id ) ) {
+        return $query;
+    }
+
     $query['tax_query'] = [[
         'taxonomy' => 'department',
         'field'    => 'term_id',
         'terms'    => $current_cat_id,
     ]];
 
-    return $query;
-    
+    return $query;   
 }
-

@@ -20,14 +20,16 @@
 <!-- wp:group {"className":"is-style-card","layout":{"type":"constrained"}} -->
 <div class="wp-block-group is-style-card"><!-- wp:post-featured-image {"width":"100%","align":"center"} /-->
 
-<!-- wp:group {"style":{"typography":{"fontStyle":"normal","fontWeight":"700"},"spacing":{"blockGap":"0px"}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
-<div class="wp-block-group" style="font-weight:700"><!-- wp:paragraph -->
+<!-- wp:group {"style":{"spacing":{"blockGap":"0px"}},"layout":{"type":"flex"}} -->
+<div class="wp-block-group" >
+<!-- wp:post-title {"level":3} /-->
+    
+<!-- wp:paragraph -->
 <p>Esperto di&nbsp;</p>
 <!-- /wp:paragraph -->
-<!-- wp:term-name {"textAlign":"center"} /--></div>
+<!-- wp:term-name /--></div>
 <!-- /wp:group -->
 
-<!-- wp:post-title {"textAlign":"left","level":3,"fontSize":"x-small","className":"expert-name"} /-->
 
 <!-- wp:post-content /--></div>
 <!-- /wp:group -->

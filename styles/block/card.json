@@ -9,32 +9,48 @@
         "core/column"
     ],
     "styles": {
-        "border": {
-            "radius": "var(--wp--preset--border-radius--large)"
+        "blocks": {
+            "core/post-featured-image": {
+                "border": {
+                    "radius": "9999px"
+                },
+                "typography": {
+                    "aspectRatio": "1"
+                }
+            },
+            "core/paragraph": {
+                "typography": {
+                    "textAlign": "left",
+                    "textTransform": "initial"
+                }
+            }
         },
-        "css": "& > .expert-name { text-transform: inherit; font-weight: inherit; }",
+        "border": {
+            "radius": "var:preset|border-radius|large"
+        },
         "color": {
-            "text": "var(--wp--preset--color--contrast)",
-            "background": "var(--wp--preset--color--base)"
+            "text": "var:preset|color|contrast",
+            "background": "var:preset|color|base"
         },
         "spacing": {
             "padding": {
-                "top": "var(--wp--preset--spacing--40)",
-                "right": "var(--wp--preset--spacing--40)",
-                "bottom": "var(--wp--preset--spacing--40)",
-                "left": "var(--wp--preset--spacing--40)"
+                "top": "var:preset|spacing|30",
+                "right": "var:preset|spacing|30",
+                "bottom": "var:preset|spacing|30",
+                "left": "var:preset|spacing|30"
             }
         },
+       
         "elements": {
             "link": {
                 "color": {
-                    "text": "var(--wp--preset--color--contrast)"
+                    "text": "var:preset|color|contrast"
                 }
             },
             "heading": {
-                "color": {
-                    "text": "var(--wp--preset--color--contrast)"
-                },
+				"color": {
+					"text": "var:preset|color|contrast"
+				},
                 "spacing":{
                     "margin": {
                         "top":"var:preset|spacing|30",
@@ -42,10 +58,11 @@
                     }
                 },
                 "typography": {
-                    "fontSize": "var(--wp--preset--font-size--x-small)",
-                    "textTransform": "uppercase",
+                    "fontSize": "var:preset|font-size|medium",
                     "lineHeight": "1.6",
-                    "fontWeight": "600"
+                    "fontWeight": "600",
+                    "textAlign": "left",
+                    "textTransform": "initial" 
                 }
             }
         }

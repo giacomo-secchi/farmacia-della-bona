@@ -1,6 +1,6 @@
 {
     "key": "group_694ba2ba207a2",
-    "title": "Department Detalis",
+    "title": "Department detalis",
     "fields": [
         {
             "key": "field_694ba4ffbb798",
@@ -75,5 +75,5 @@
     "description": "",
     "show_in_rest": 0,
     "display_title": "",
-    "modified": 1768143163
+    "modified": 1768294528
 }

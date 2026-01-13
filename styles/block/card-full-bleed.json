@@ -6,18 +6,18 @@
     "blockTypes": ["core/group"],
     "styles": {
         "border": {
-            "radius": "var(--wp--preset--border-radius--large)"
+            "radius": "var:preset|border-radius|large"
         },
         "color": {
-            "text": "var(--wp--preset--color--contrast)",
-            "background": "var(--wp--preset--color--base)"
+            "text": "var:preset|color|contrast",
+            "background": "var:preset|color|base"
         },
         "css": "& { overflow: hidden; }",
         "spacing": {
             "padding": {
                 "right": "0",
                 "left": "0",
-                "bottom": "var(--wp--preset--spacing--40)"
+                "bottom": "var:preset|spacing|40"
             }
         },
         
@@ -26,24 +26,24 @@
             "core/post-author-name": {
                 "spacing": {
                     "padding": {
-                        "right": "var(--wp--preset--spacing--40)",
-                        "left": "var(--wp--preset--spacing--40)"
+                        "right": "var:preset|spacing|40",
+                        "left": "var:preset|spacing|40"
                     }
                 }
             },
             "core/post-title": {
                 "spacing": {
                     "padding": {
-                        "right": "var(--wp--preset--spacing--40)",
-                        "left": "var(--wp--preset--spacing--40)"
+                        "right": "var:preset|spacing|40",
+                        "left": "var:preset|spacing|40"
                     }
                 }
             },
             "core/post-excerpt": {
                 "spacing": {
                     "padding": {
-                        "right": "var(--wp--preset--spacing--40)",
-                        "left": "var(--wp--preset--spacing--40)"
+                        "right": "var:preset|spacing|40",
+                        "left": "var:preset|spacing|40"
                     }
                 }
             }
@@ -51,12 +51,12 @@
         "elements": {
             "link": {
                 "color": {
-                    "text": "var(--wp--preset--color--primary)"
+                    "text": "var:preset|color|primary"
                 }
             },
             "heading": {
                 "color": {
-                    "text": "var(--wp--preset--color--black)"
+					"text": "var:preset|color|contrast"
                 },
                 "spacing":{
                     "margin": {
@@ -64,9 +64,10 @@
                     }
                 },
                 "typography": {
-                    "fontSize": "var(--wp--preset--font-size--small)",
+                    "fontSize": "var:preset|font-size|small",
                     "lineHeight": "1.6",
-                    "fontWeight": "600"
+                    "fontWeight": "600",
+                    "textAlign": "left"
                 }
             }
         }

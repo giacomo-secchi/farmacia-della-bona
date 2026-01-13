@@ -5,24 +5,41 @@
  * Categories: farmacia-della-bona-patterns
  */
 ?>
- 
- 
-<!-- wp:cover {"url":"section_department_service_image","dimRatio":20,"isDark":false,"namespace":"service-section","className":"is-style-section-2","align":"full"} -->
-<div class="wp-block-cover alignfull is-light is-style-section-2"><img class="wp-block-cover__image-background" alt="" src="section_department_service_image" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-background-dim-20 has-background-dim"></span><div class="wp-block-cover__inner-container">
+
+
+
+<!-- wp:group {"className":"is-style-section-1","align":"full","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull is-style-section-1">
+
 <!-- wp:paragraph -->
 <p>Servizi Disponibili.</p>
 <!-- /wp:paragraph -->
-<!-- wp:term-name {"level":2} /-->
+ <!-- wp:heading -->
+<h2 class="wp-block-heading">I Nostri Servizi</h2>
+<!-- /wp:heading -->
 
 
-<!-- wp:query {"query":{"postType":"service","perPage":10,"inherit":false},"namespace":"service-category-query","className":"alignwide"} -->
-<div class="wp-block-query alignwide"><!-- wp:post-template {"layout":{"type":"grid","columnCount":3}} -->
+
+<!-- wp:query {"query":{"postType":"service","perPage":100,"inherit":false},"namespace":"service-category-query","className":"alignwide"} -->
+<div class="wp-block-query alignwide"><!-- wp:post-template {"layout":{"type":"grid","columnCount":4}} -->
     <!-- wp:group {"className":"is-style-card","layout":{"type":"constrained"}} -->
     <div class="wp-block-group is-style-card">
         
-        <!-- wp:post-featured-image {"width":"80px","height":"80px","align":"center"} /-->
+        <!-- wp:post-featured-image {"width":"80px","height":"80px" } /-->
 
-        <!-- wp:post-title {"textAlign":"center"} /-->
+        <!-- wp:post-title /-->
+
+        <!-- wp:paragraph {
+            "metadata":{
+                "bindings":{
+                    "content":{
+                        "source":"farmacia-delle-bona/service-meta"
+                    }
+                }
+            }
+        } -->
+        <p></p>
+        <!-- /wp:paragraph -->
         
         <!-- wp:post-content /--></div>
     <!-- /wp:group -->
@@ -39,25 +56,5 @@
 <!-- /wp:buttons -->
 
 
-</div></div>
-<!-- /wp:cover -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
- 
-
-
- 
+</div>
+<!-- /wp:group -->

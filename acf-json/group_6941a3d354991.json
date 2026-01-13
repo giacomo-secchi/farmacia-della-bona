@@ -1,6 +1,6 @@
 {
     "key": "group_6941a3d354991",
-    "title": "Hero Banner",
+    "title": "Hero banner",
     "fields": [
         {
             "key": "field_6941a3d55d0a5",
@@ -154,7 +154,30 @@
                 "class": "",
                 "id": ""
             },
-            "choices": [],
+            "choices": {
+                "": "None (Transparent)",
+                "base": "Base",
+                "contrast": "Contrast",
+                "primary": "Primary",
+                "primary-light-100": "Primary Light (100)",
+                "secondary": "Secondary",
+                "neutral": "Neutral",
+                "purple": "Purple",
+                "brown": "Brown",
+                "yellow": "yellow",
+                "black": "Nero",
+                "cyan-bluish-gray": "Ciano bluastro grigio",
+                "white": "Bianco",
+                "pale-pink": "Rosa pallido",
+                "vivid-red": "Rosso vivo",
+                "luminous-vivid-orange": "Arancione vivido luminoso",
+                "luminous-vivid-amber": "Ambra intenso luminoso",
+                "light-green-cyan": "Ciano verde chiaro",
+                "vivid-green-cyan": "Ciano verde intenso",
+                "pale-cyan-blue": "Blu ciano pallido",
+                "vivid-cyan-blue": "Blu ciano intenso",
+                "vivid-purple": "Viola intenso"
+            },
             "default_value": false,
             "return_format": "value",
             "multiple": 0,
@@ -266,5 +289,5 @@
     "description": "",
     "show_in_rest": 0,
     "display_title": "",
-    "modified": 1767886007
+    "modified": 1768294642
 }
