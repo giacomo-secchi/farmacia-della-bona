@@ -21,6 +21,26 @@
             "first_day": 1,
             "default_to_current_date": 0,
             "allow_in_bindings": 0
+        },
+        {
+            "key": "field_696752aca944b",
+            "label": "Location",
+            "name": "event_location",
+            "aria-label": "",
+            "type": "google_map",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "center_lat": "",
+            "center_lng": "",
+            "zoom": "",
+            "height": "",
+            "allow_in_bindings": 0
         }
     ],
     "location": [
@@ -40,7 +60,7 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "show_in_rest": 0,
+    "show_in_rest": 1,
     "display_title": "",
-    "modified": 1768294596
+    "modified": 1768379129
 }

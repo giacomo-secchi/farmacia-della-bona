@@ -9,14 +9,6 @@
         "core/column"
     ],
     "styles": {
-        "blocks": {
-            "core/paragraph": {
-                "typography": {
-                    "textAlign": "left",
-                    "textTransform": "initial"
-                }
-            }
-        },
         "border": {
             "radius": "var:preset|border-radius|large"
         },
@@ -32,7 +24,14 @@
                 "left": "var:preset|spacing|30"
             }
         },
-       
+        "blocks": {
+            "core/paragraph": {
+                "typography": {
+                    "textAlign": "left",
+                    "textTransform": "initial"
+                }
+            }
+        },       
         "elements": {
             "link": {
                 "color": {

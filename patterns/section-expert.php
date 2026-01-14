@@ -42,9 +42,21 @@
 <div class="wp-block-group"><!-- wp:query {"queryId":8,"query":{"postType":"event","perPage":2,"inherit":false},"namespace":"event-highlight-query"} -->
 <div class="wp-block-query"><!-- wp:post-template {"layout":{"type":"default","columnCount":3}} -->
 <!-- wp:group {"className":"is-style-card","layout":{"type":"constrained"}} -->
-<div class="wp-block-group is-style-card"><!-- wp:post-featured-image {"width":"80px","height":"80px","align":"center"} /-->
+<div class="wp-block-group is-style-card"><!-- wp:post-featured-image {"width":"80px","height":"80px"} /-->
 
-<!-- wp:post-title {"textAlign":"center"} /-->
+<!-- wp:post-title /-->
+
+        <!-- wp:paragraph {
+            "metadata":{
+                "bindings":{
+                    "content":{
+                        "source":"farmacia-della-bona/event-date"
+                    }
+                }
+            }
+        } -->
+        <p></p>
+        <!-- /wp:paragraph -->
 
 <!-- wp:post-content /--></div>
 <!-- /wp:group -->
