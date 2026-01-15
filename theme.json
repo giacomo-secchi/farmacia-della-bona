@@ -140,13 +140,43 @@
 	},
 	"styles": {
 		"blocks": {
-			 
+			 "jetpack/contact-form": {
+				"css": "& { --jetpack--contact-form--border-color: var(--wp--preset--color--neutral); }"
+			},
 			"core/navigation": {
 				"css": "& .wp-block-navigation-item:hover { color: var(--wp--preset--color--contrast); }"
 			},
 			"jetpack/whatsapp-button": {
 				"css": "& .whatsapp-block__button { border-radius: 50px !important; background-position: center !important; padding: var(--wp--preset--spacing--30) !important; box-shadow: var(--wp--preset--shadow--natural);}"
-			}
+			},
+			"jetpack/input": {
+				"border": {
+					"width": "1px",
+					"style": "solid",
+					"color": "var:preset|color|neutral"
+				}
+			},
+			"jetpack/phone-input": {
+				"border": {
+					"width": "1px",
+					"style": "solid",
+					"color": "var:preset|color|neutral"
+				}
+			},
+			"jetpack/text-area": {
+				"border": {
+					"width": "1px",
+					"style": "solid",
+					"color": "var:preset|color|neutral"
+				}
+			},
+			"jetpack/label": {
+				"typography": {
+                    "fontSize": "var:preset|font-size|small",
+                    "fontWeight": "400",
+                    "textTransform": "initial" 
+                }
+			} 
 		},
 		"elements": {
 			"link": {
