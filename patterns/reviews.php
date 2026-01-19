@@ -16,7 +16,9 @@
 
     	<!-- wp:group {"align":"wide","layout":{"type":"flex","justifyContent":"space-between"}} -->
 		<div class="wp-block-group alignwide">
-			<script defer async src='https://cdn.trustindex.io/loader.js?2f0cacb62b790610b616ca1e87b'></script>
+			<!-- wp:html -->
+				<script defer async src='https://cdn.trustindex.io/loader.js?2f0cacb62b790610b616ca1e87b'></script>
+			<!-- /wp:html -->
 		</div>
 	<!-- /wp:group -->
 </div>
