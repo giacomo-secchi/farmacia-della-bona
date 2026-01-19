@@ -58,7 +58,7 @@
 <!-- /wp:paragraph -->
 <!-- wp:paragraph -->
 <p>Responsabile del reparto è la <strong>dr.ssa Giovanna Della Bona</strong>, alla quale potrete far riferimento per una consulenza, un consiglio o per un colloquio nel caso vogliate avvicinarvi ai <strong>fiori di Bach</strong>.</p>
-<!-- /wp:paragraph --></div><figure class="wp-block-media-text__media"><img src="<?php echo esc_url( get_stylesheet_directory_uri() ) . '/assets/images/DSC_4846b.JPG'; ?>" alt="" class="wp-image-180 size-full"/></figure></div>
+<!-- /wp:paragraph --></div><figure class="wp-block-media-text__media"><img src="<?php echo esc_url( get_stylesheet_directory_uri() ) . '/assets/images/DSC_4846b.jpg'; ?>" alt="" class="wp-image-180 size-full"/></figure></div>
 <!-- /wp:media-text --></div>
 <!-- /wp:group -->
 
