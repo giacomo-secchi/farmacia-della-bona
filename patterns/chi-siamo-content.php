@@ -92,7 +92,7 @@
 <p>Farmacia Della Bona</p>
 <!-- /wp:paragraph -->
  <!-- wp:heading -->
-<h2 class="wp-block-heading">Il nostro team</h2>
+<h2 class="wp-block-heading">Il Nostro Team</h2>
 <!-- /wp:heading -->
 
 <!-- wp:query {"queryId":0,"query":{"perPage":10,"pages":0,"offset":0,"postType":"team_member","order":"desc","orderBy":"menu_order","author":"","search":"","exclude":[],"sticky":"","inherit":false,"parents":[],"format":[]},"namespace":"advanced-query-loop"} -->
