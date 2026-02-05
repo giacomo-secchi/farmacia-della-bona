@@ -7,9 +7,9 @@
             "label": "Title",
             "name": "hero_title",
             "aria-label": "",
-            "type": "text",
+            "type": "textarea",
             "instructions": "",
-            "required": 1,
+            "required": 0,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
@@ -19,9 +19,9 @@
             "default_value": "",
             "maxlength": "",
             "allow_in_bindings": 0,
+            "rows": "",
             "placeholder": "",
-            "prepend": "",
-            "append": ""
+            "new_lines": "br"
         },
         {
             "key": "field_6941a4f05d0a6",
@@ -289,5 +289,5 @@
     "description": "",
     "show_in_rest": 0,
     "display_title": "",
-    "modified": 1768294642
+    "modified": 1770289726
 }
