@@ -1,0 +1,27 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "farmacia-della-bona/hero",
+	"version": "0.1.0",
+	"title": "Hero",
+	"category": "widgets",
+	"icon": "cover-image",
+	"description": "Visualizza i dati inseriti per Reparto.",
+	"example": {},
+	"supports": {
+		"align": ["wide", "full"],
+		"html": false
+	},
+	"attributes": {
+        "align": {
+            "type": "string",
+            "default": "full"
+        }
+    },
+	"textdomain": "farmacia-della-bona",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php",
+	"viewScript": "file:./view.js"
+}

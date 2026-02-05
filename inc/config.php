@@ -89,87 +89,9 @@ add_filter( 'farmaciadellabona_block_variations_config', function ( $config ) {
                     ],
 
                 ],
-            ],
-            [
-                'name'      => 'hero',
-                'title'     => __( 'Hero Reparto', 'farmacia-della-bona' ),
-                'description' => __( 'Visualizza i dati inseriti per Reparto', 'farmacia-della-bona' ),
-                'isActive'   => [ 'namespace' ],
-                'attributes' => [
-                    'namespace'     => 'hero',
-                    'align'         => 'full',
-                    'dimRatio'      => 50,
-                    'style'      => [
-                        'spacing' => [
-                            'margin' => [
-                                'top'    => '0px',
-                                'bottom' => '0px',
-                            ],
-                            'padding' => [
-                                'top'    => 'var:preset|spacing|80',
-                                'left'    => 'var:preset|spacing|80',
-                                'bottom' => 'var:preset|spacing|80',
-                                'right' => 'var:preset|spacing|80',
-                            ],
-                        ],
-                    ],
-                    'url'           => 'hero_image',
-                    'acf_fields'    => [
-                        'hero_image',
-                        'hero_content',
-                        'hero_title',
-                        'hero_subtitle',
-                        'hero_list',
-                        'hero_list_item',
-                        'hero_button_link',
-                        'hero_button_text',
-                        'hero_product_id',
-                        'hero_overlay_color_palette'
-                    ],
-                ],
-                'innerBlocks' => [
-                    [
-                        'name' => 'core/heading',
-                        'attributes' => [
-                            'level'   => 2,
-                            'content' => 'hero_title',
-                        ],
-                    ],
-                    [
-                        'name' => 'core/paragraph',
-                        'attributes' => [
-                            'content' => 'hero_content'
-                        ],
-                    ],
-                    [
-                        'name' => 'core/paragraph',
-                        'attributes' => [
-                            'content' => 'hero_subtitle'
-                        ],
-                    ],
-                    [
-                        'name' => 'core/buttons',
-                        'attributes' => [
-                            'layout' => [
-                                'type' => 'flex',
-                                'justifyContent' => 'center',
-                            ],
-                        ],
-                        'innerBlocks' => [
-                            [
-                                'name' => 'core/button',
-                                'attributes' => [
-                                    'text' => 'hero_button_text',
-                                    'url'  => 'hero_button_link',
-                                ],
-                            ],
-                        ],
-                    ],
-                ],
-                'scope'      => [ 'inserter' ],
-            ]
+            ] 
         ]
-        
+
     ];
 
     return $config;

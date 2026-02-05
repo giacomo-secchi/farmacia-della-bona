@@ -3,18 +3,28 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-		"build": "wp-scripts build --blocks-manifest --webpack-copy-php --source-path=blocks",
-		"start": "wp-scripts start --blocks-manifest --webpack-copy-php --source-path=blocks"
+    "build": "wp-scripts build --blocks-manifest --webpack-copy-php --source-path=blocks",
+    "format": "wp-scripts format",
+    "lint:css": "wp-scripts lint-style",
+    "lint:js": "wp-scripts lint-js",
+    "packages-update": "wp-scripts packages-update",
+    "start": "wp-scripts start --blocks-manifest --webpack-copy-php --source-path=blocks"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Giacomo Secchi",
+  "license": "GPL-2.0-or-later",
   "description": "",
   "engines": {
     "node": "22.18.0",
     "npm": "10.9.3"
   },
+  "dependencies": {
+    "@wordpress/block-editor": "^15.12.0",
+    "@wordpress/blocks": "^15.12.0",
+    "@wordpress/i18n": "^6.12.0",
+    "@wordpress/server-side-render": "^6.15.0"
+  },
   "devDependencies": {
-    "@wordpress/scripts": "^31.2.0"
+    "@wordpress/scripts": "^31.4.0"
   }
 }

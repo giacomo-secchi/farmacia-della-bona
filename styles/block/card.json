@@ -6,7 +6,8 @@
     "blockTypes": [
         "core/group",
         "core/columns",
-        "core/column"
+        "core/column",
+        "woocommerce/single-product"
     ],
     "styles": {
         "border": {
