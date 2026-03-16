@@ -97,9 +97,7 @@ add_filter( 'farmaciadellabona_block_variations_config', function ( $config ) {
     return $config;
 } );
 
-
-
-
+ 
 
 // Logica per lo Staff
 function farmaciadellabona_filter_staff_query( $query, $block ) {

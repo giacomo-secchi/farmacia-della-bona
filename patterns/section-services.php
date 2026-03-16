@@ -40,8 +40,8 @@
         } -->
         <p></p>
         <!-- /wp:paragraph -->
-        
-        <!-- wp:post-content /--></div>
+
+        <!-- wp:post-excerpt /--></div>
     <!-- /wp:group -->
     <!-- /wp:post-template -->
 </div>
